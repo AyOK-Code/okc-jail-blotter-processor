@@ -4,11 +4,15 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "download-fixtures": "scripts/download-fixtures.sh",
+    "test": "mocha --delay"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "pdf-parse": "1.1.1"
+  },
+  "devDependencies": {
+    "mocha": "^7.0.1"
   }
 }
