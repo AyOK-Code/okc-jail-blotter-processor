@@ -16,14 +16,14 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "47-11.902",
           "dispo": "PB",
           "charge": "DUI/APC - 1ST OFFENSE LIQUOR OR DRUGS M"
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1289.9",
           "dispo": "PB",
           "charge": "CARRYING FIREARMS WHILE UNDER THE INFLUENCE M"
@@ -61,19 +61,19 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "63-2.401.A",
           "charge": "DIST OF CONTROLLED SUBSTANCE -INCL POSS W/ INTENT F"
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "63-2.402.B2",
           "charge": "POSSESS MARIJUANA M"
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "47-6.303.B",
           "charge": "DRIVING WHILE SUSPENDED/REVOKED/CANCELLED/DENIE D M"
         },
@@ -119,7 +119,7 @@
         },
         {
           "type": "SS",
-          "bond": "2,500.00",
+          "bond": "2500.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-2018-235"
@@ -192,35 +192,35 @@
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-2019-3014"
         },
         {
           "type": "SS",
-          "bond": "4,000.00",
+          "bond": "4000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-2019-1212"
         },
         {
           "type": "SS",
-          "bond": "8,000.00",
+          "bond": "8000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-2019-688"
         },
         {
           "type": "JD",
-          "bond": "6,000.00",
+          "bond": "6000.00",
           "code": "FA2",
           "charge": "FAILURE TO APPEAR IN JD COURT",
           "warrantNumber": "175320976 B"
         },
         {
           "type": "JD",
-          "bond": "12,000.00",
+          "bond": "12000.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "173620733 B"
@@ -275,19 +275,19 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "63-2.401.A",
           "charge": "DIST OF CONTROLLED SUBSTANCE -INCL POSS W/ INTENT F"
         },
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-1287",
           "charge": "USING OFFENSIVE WEAPON IN FELONY F"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402",
           "charge": "POSS OF CONTROLLED SUBSTANCE M"
         },
@@ -299,13 +299,13 @@
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1713",
           "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402.B1",
           "charge": "POSSESSION OF CDS M"
         }
@@ -351,7 +351,7 @@
         },
         {
           "type": "SS",
-          "bond": "16,000.00",
+          "bond": "16000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-18-3893"
@@ -394,31 +394,31 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "50,000.00",
+          "bond": "50000.00",
           "code": "63-2.415.C",
           "charge": "AGGRAVATED TRAFFICKING IN ILLEGAL DRUGS/ CDS F"
         },
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "63-2.503",
           "charge": "ACQUIRE PROCEEDS FROM DRUG ACTIVITY F"
         },
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "63-2.401.A",
           "charge": "DIST OF CONTROLLED SUBSTANCE -INCL POSS W/ INTENT F"
         },
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-1287",
           "charge": "USING OFFENSIVE WEAPON IN FELONY F"
         },
         {
           "type": "SS",
-          "bond": "20,000.00",
+          "bond": "20000.00",
           "code": "63-2.401.G1",
           "charge": "MANUFACTURE/ATTEMPT TO MANUFACTURE CDS F"
         }
@@ -439,19 +439,19 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "21-540A.A",
           "charge": "ELUDING POLICE OFFICER M"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402.B1",
           "charge": "POSSESSION OF CDS M"
         },
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2009-449"
@@ -515,25 +515,25 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "7,500.00",
+          "bond": "7500.00",
           "code": "63-2.401.A",
           "charge": "DIST OF CONTROLLED SUBSTANCE -INCL POSS W/ INTENT F"
         },
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-1287",
           "charge": "USING OFFENSIVE WEAPON IN FELONY F"
         },
         {
           "type": "SS",
-          "bond": "7,500.00",
+          "bond": "7500.00",
           "code": "21-1283",
           "charge": "CARRY FIREARMS AFTER CONVICTION/DURING PROBATION F"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402",
           "charge": "POSS OF CONTROLLED SUBSTANCE M"
         },
@@ -545,13 +545,13 @@
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1713",
           "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402.B1",
           "charge": "POSSESSION OF CDS M"
         }
@@ -572,7 +572,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-17004269"
@@ -672,13 +672,13 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "63-2.401.A1",
           "charge": "DISTRIBUTE OR DISPENSE CDS"
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "63-2.402.B2",
           "charge": "POSSESS MARIJUANA M"
         },
@@ -705,7 +705,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1713",
           "charge": "REC/POSS/CONC STOLEN PROPERTY F"
         }
@@ -727,7 +727,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "4,236.40",
+          "bond": "4236.40",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-1997-90"
@@ -1044,14 +1044,14 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "47-4.102",
           "dispo": "JR",
           "charge": "UNAUTHORIZED USE OF A VEHICLE F"
         },
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "21-1720",
           "dispo": "JR",
           "charge": "LARCENY-AUTO AIRCRAFT OR OTHER MOTOR VEH F"
@@ -1165,25 +1165,25 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "47-11.902",
           "charge": "DUI/APC - 1ST OFFENSE LIQUOR OR DRUGS M"
         },
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402.A1",
           "charge": "POSSESS CDS WITHOUT PRESCRIPTION M"
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "63-2.402.B2",
           "charge": "POSSESS MARIJUANA M"
         },
         {
           "type": "SS",
-          "bond": "2,250.00",
+          "bond": "2250.00",
           "code": "47-6.303.B",
           "charge": "DRIVING WHILE SUSPENDED/REVOKED/CANCELLED/DENIE D M"
         },
@@ -1380,14 +1380,14 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2008-7465"
         },
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2008-7114"
@@ -1409,7 +1409,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "25,000.00",
+          "bond": "25000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2019-1413"
@@ -1445,13 +1445,13 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "21-1283.A",
           "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1289.9",
           "charge": "CARRYING FIREARMS WHILE UNDER THE INFLUENCE M"
         },
@@ -1565,7 +1565,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "63-2.402",
           "charge": "POSS OF CONTROLLED SUBSTANCE M"
         },
@@ -1591,7 +1591,7 @@
       "charges": [
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "168724486 B"
@@ -1717,7 +1717,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,500.00",
+          "bond": "2500.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF19-450"
@@ -1739,7 +1739,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2019-1508"
@@ -1823,7 +1823,7 @@
         },
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "21-540",
           "charge": "OBSTRUCTING OFFICER M"
         },
@@ -1849,7 +1849,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2018-72"
@@ -1863,21 +1863,21 @@
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "190240103 B"
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "174617535 B"
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "174303357 B"
@@ -1906,7 +1906,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2018-2806"
@@ -1949,7 +1949,7 @@
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "17302512X B"
@@ -1970,7 +1970,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-16-4844"

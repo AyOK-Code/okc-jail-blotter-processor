@@ -3,18 +3,7 @@
 const fs = require('fs')
 const { promisify } = require('util')
 const assert = require('assert')
-const { parseJailblotter } = require('../src/parsing/jail-blotter')
-
-const crypto = require('crypto')
-const salt = 'This is not meant to be secure, just remove names and such from search engines'
-const sensitiveFields = ['firstName', 'lastName', 'dob', 'address']
-const hashSensitiveFields = (row) => {
-  sensitiveFields.forEach((field) => {
-    const hash = crypto.createHash('sha256')
-    hash.update(`${salt} ${row[field]}`)
-    row[field] = hash.digest('base64')
-  })
-}
+const { parseJailblotter, anonymizeRow } = require('../src/parsing/jail-blotter')
 
 async function main () {
   const files = await promisify(fs.readdir)(`${__dirname}/fixtures`)
@@ -29,7 +18,7 @@ async function main () {
           const bufPdf = await promisify(fs.readFile)(`${__dirname}/fixtures/${pdf}`)
           const bufJson = await promisify(fs.readFile)(`${__dirname}/fixtures/${json}`)
           const { parsed } = await parseJailblotter(bufPdf, false)
-          parsed.rows.forEach(hashSensitiveFields)
+          parsed.rows.forEach(anonymizeRow)
           assert.deepStrictEqual(parsed, JSON.parse(bufJson.toString('utf8')))
         })
       } else {

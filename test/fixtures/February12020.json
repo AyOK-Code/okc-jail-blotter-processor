@@ -16,7 +16,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "20,000.00",
+          "bond": "20000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-19-4879"
@@ -38,13 +38,13 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "21-1435.B",
           "charge": "BURGLARY - THIRD DEGREE F"
         },
         {
           "type": "SS",
-          "bond": "4,000.00",
+          "bond": "4000.00",
           "code": "21-1713",
           "charge": "REC/POSS/CONC STOLEN PROPERTY F"
         },
@@ -77,7 +77,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-799",
           "charge": "ROBBERY SECOND DEGREE F"
         },
@@ -142,21 +142,21 @@
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "DP1",
           "charge": "DESTROYING PRIVATE/PUBLIC PROPERTY",
           "warrantNumber": "098088273 B"
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "053528718 B"
         },
         {
           "type": "CR",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "MJ9",
           "charge": "POSSESSION OF MARIJUANA",
           "warrantNumber": "053529727 B"
@@ -213,7 +213,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "50,000.00",
+          "bond": "50000.00",
           "code": "21-801",
           "charge": "ROBBERY WITH FIREARM/DANGEROUS WEAPON/IMITATION FIREARM F",
           "warrantNumber": "MI-2019-1013"
@@ -235,7 +235,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-09002481"
@@ -302,7 +302,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1713",
           "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
         },
@@ -380,7 +380,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "50,000.00",
+          "bond": "50000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2016-0507"
@@ -421,7 +421,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "21-1289.16",
           "charge": "POINTING FIREARMS F"
         }
@@ -469,14 +469,14 @@
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2018-2159"
         },
         {
           "type": "SS",
-          "bond": "25,000.00",
+          "bond": "25000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2016-1594"
@@ -654,7 +654,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2019-2785"
@@ -740,7 +740,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF2019-30"
@@ -769,7 +769,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "25,000.00",
+          "bond": "25000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-2020-194"
@@ -791,7 +791,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "dispo": "JR",
           "charge": "FUGITIVE FROM JUSTICE M",
@@ -884,7 +884,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "22-1141.13",
           "dispo": "PB",
           "charge": "FUGITIVE FROM JUSTICE M",
@@ -967,7 +967,7 @@
       "charges": [
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "185675405 B"
@@ -1009,13 +1009,13 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "21-1289.16",
           "charge": "POINTING FIREARMS F"
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "21-1289.9",
           "charge": "CARRYING FIREARMS WHILE UNDER THE INFLUENCE M"
         }
@@ -1037,7 +1037,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "47-4.102",
           "dispo": "PB",
           "charge": "UNAUTHORIZED USE OF A VEHICLE F"
@@ -1076,7 +1076,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "dispo": "OTHLE",
           "charge": "FUGITIVE FROM JUSTICE F",
@@ -1232,21 +1232,21 @@
       "charges": [
         {
           "type": "JD",
-          "bond": "3,000.00",
+          "bond": "3000.00",
           "code": "XX2",
           "charge": "LARCENY OF MERCHANDISE",
           "warrantNumber": "185120419 B"
         },
         {
           "type": "JD",
-          "bond": "2,400.00",
+          "bond": "2400.00",
           "code": "NU2",
           "charge": "PUBLIC INDECENCY",
           "warrantNumber": "185723219 B"
         },
         {
           "type": "JD",
-          "bond": "1,500.00",
+          "bond": "1500.00",
           "code": "FA2",
           "charge": "FAILURE TO APPEAR IN JD COURT",
           "warrantNumber": "18594364X B"
@@ -1444,7 +1444,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-799",
           "charge": "ROBBERY SECOND DEGREE F"
         },
@@ -1575,7 +1575,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "1,000.00",
+          "bond": "1000.00",
           "code": "21-1289.11",
           "charge": "RECKLESS CONDUCT WITH FIREARM M"
         }
@@ -1597,7 +1597,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "CF-19002344"
@@ -1618,7 +1618,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "5,000.00",
+          "bond": "5000.00",
           "code": "21-1283.A",
           "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
         },
@@ -1682,7 +1682,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "10,000.00",
+          "bond": "10000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE F",
           "warrantNumber": "2012-4"
@@ -1736,7 +1736,7 @@
       "charges": [
         {
           "type": "SS",
-          "bond": "15,000.00",
+          "bond": "15000.00",
           "code": "21-645",
           "charge": "ASSAULT,BATTERY,OR ASSAULT & BATTERY W/DANG WEAPON F"
         },
@@ -1788,7 +1788,7 @@
         },
         {
           "type": "SS",
-          "bond": "2,000.00",
+          "bond": "2000.00",
           "code": "22-1141.13",
           "charge": "FUGITIVE FROM JUSTICE M",
           "warrantNumber": "CM-2018-2321"

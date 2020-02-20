@@ -1,5 +1,6 @@
 const fs = require('fs')
 const { promisify } = require('util')
+const crypto = require('crypto')
 const pdf = require('pdf-parse')
 const { ParsingError, parsers: p, combinators: c, mappers: m, parse } = require('./parser-combinators')
 
@@ -48,6 +49,13 @@ const selectors = {
     const [, last, first] = selected
     return { lastName: squish(last), firstName: squish(first) }
   },
+  money: (s, field) => {
+    const selected = s.match(regexes.money)
+    if (selected == null) {
+      throw new ParsingError(`Invalid money at ${field}: ${JSON.stringify(s)}`)
+    }
+    return { [field]: selected[1].replace(/,/g, '') }
+  },
   freeform: (s, field) => {
     return { [field]: squish(s) }
   },
@@ -66,14 +74,14 @@ const selectors = {
     }
     const [, month, day, year, hourUs, minute, second, ampm] = selected
     const hourZero = hourUs === '12' ? '0' : hourUs
-    const hour = ampm === 'PM' ? (~~hourZero + 12).toString() : hourZero
+    const hour = ampm === 'PM' ? (Math.floor(hourZero) + 12).toString() : hourZero
     return { [field]: `${year}-${month.padStart(2, '0')}-${day.padStart(2, '0')} ${hour.padStart(2, '0')}:${minute.padStart(2, '0')}:${second.padStart(2, '0')}` }
   }
 }
 
-const startsAt = (v) => (x, r, t) => x === v
-const endsAt = (v) => (x, r, t) => t === v
-const centeredOn = (v) => (x, r, t) => r === v
+const startsAt = (x) => (left, center, right) => x === left
+const centeredOn = (x) => (left, center, right) => x === center
+const endsAt = (x) => (left, center, right) => x === right
 
 const fields = {
   // Fixed
@@ -107,7 +115,7 @@ const fields = {
   warrantNumberHeader: { vx: startsAt(132), selector: selectors.text('Warrant #') },
   // Table rows
   type: { vx: startsAt(42), selector: selectors.pattern(regexes.type) },
-  bond: { vx: endsAt(522), selector: selectors.pattern(regexes.money) },
+  bond: { vx: endsAt(522), selector: selectors.money },
   code: { vx: startsAt(195), selector: selectors.pattern(regexes.code) },
   dispo: { vx: centeredOn(1099), selector: selectors.freeform },
   charge: { vx: startsAt(259), selector: selectors.freeform },
@@ -148,10 +156,9 @@ async function tokenize (buf) {
       data.items.forEach((data, i, arr) => {
         const { str, transform, width } = data
         const x = transform[4]
-        const w = width
-        const left = ~~x
-        const center = ~~(x + x + w)
-        const right = ~~(x + w)
+        const left = Math.floor(x)
+        const center = Math.floor(x + x + width)
+        const right = Math.floor(x + width)
         tokens.push({ s: str, left, center, right })
       })
     }
@@ -282,6 +289,7 @@ exports.parseJailblotter = async function (buf, debug = true) {
   try {
     const { data: parsed } = parse(grammar, tokens, log)
     if (debug) {
+      parsed.rows.forEach(exports.anonymizeRow)
       await promisify(fs.writeFile)('./parsed.json', JSON.stringify(parsed, null, 2))
     }
 
@@ -303,4 +311,13 @@ exports.parseJailblotter = async function (buf, debug = true) {
     log.slice(-50).forEach((x) => console.error(x))
     throw err
   }
+}
+
+const salt = 'This is not meant to be secure, just remove names and such from search engines'
+exports.anonymizeRow = function (row) {
+  ['firstName', 'lastName', 'dob', 'address'].forEach((field) => {
+    const hash = crypto.createHash('sha256')
+    hash.update(`${salt} ${row[field]}`)
+    row[field] = hash.digest('base64')
+  })
 }
