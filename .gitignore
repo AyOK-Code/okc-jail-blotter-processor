@@ -1,5 +1,6 @@
 node_modules/
 package-lock.json
 **/*.pdf
-tokens.txt
-parsed.json
+**/tokens.txt
+**/parsed.json
+**/.DS_Store

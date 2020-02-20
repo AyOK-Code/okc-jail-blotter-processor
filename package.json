@@ -5,14 +5,19 @@
   "main": "index.js",
   "scripts": {
     "download-fixtures": "scripts/download-fixtures.sh",
+    "migrate": "cd src && npx sequelize-cli db:migrate",
     "test": "mocha --delay"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "pdf-parse": "1.1.1"
+    "pdf-parse": "1.1.1",
+    "pg": "^7.0.0",
+    "pg-hstore": "^2.3.3",
+    "sequelize": "5.21.5",
+    "sequelize-cli": "5.5.1"
   },
   "devDependencies": {
-    "mocha": "^7.0.1"
+    "mocha": "7.0.1"
   }
 }

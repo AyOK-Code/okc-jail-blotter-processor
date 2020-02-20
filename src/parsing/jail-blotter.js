@@ -168,7 +168,7 @@ async function tokenize (buf) {
 }
 
 /* FILTER GRAMMAR */
-const chargeTableHeaders = c.merge([
+const offenseTableHeaders = c.merge([
   m.ignore(take('dispoHeader')),
   m.ignore(take('chargeHeader')),
   m.ignore(take('codeHeader')),
@@ -194,7 +194,7 @@ const filterTokensGrammar = c.many1('data',
         c.first([
           m.ignore(take('pageNumber')),
           m.ignore(take('printDate')),
-          chargeTableHeaders,
+          offenseTableHeaders,
           documentHeaders
         ])
       )
@@ -229,14 +229,14 @@ const fixedFields = c.merge([
     m.join('address', take('address')),
     ({ address }) => {
       const selected = address.match(regexes.zip)
-      return selected == null ? { address } : { address, zip: selected[1] }
+      return selected == null ? {} : { zip: selected[1] }
     }
   ),
   c.maybe(take('bookingType')),
   m.ignore(take('bookingTypeLabel'))
 ])
 
-const charge = c.log(c.merge([
+const offense = c.log(c.merge([
   take('type'),
   c.maybe(take('bond')),
   c.map(
@@ -257,7 +257,7 @@ const charge = c.log(c.merge([
   m.ignore(c.maybe(c.many1('code wrap', take('code')))),
   m.ignore(c.maybe(c.many1('charge wrap', take('charge'))))
 
-]), 'charge row')
+]), 'offense row')
 
 const endOfDocument = c.merge([
   m.ignore(take('totalInmatesLabel')),
@@ -268,7 +268,7 @@ const grammar = c.merge([
   c.many1('rows',
     c.merge([
       fixedFields,
-      c.many1('charges', charge)
+      c.many1('offenses', offense)
     ])
   ),
   endOfDocument
@@ -289,7 +289,6 @@ exports.parseJailblotter = async function (buf, debug = true) {
   try {
     const { data: parsed } = parse(grammar, tokens, log)
     if (debug) {
-      parsed.rows.forEach(exports.anonymizeRow)
       await promisify(fs.writeFile)('./parsed.json', JSON.stringify(parsed, null, 2))
     }
 
@@ -315,7 +314,7 @@ exports.parseJailblotter = async function (buf, debug = true) {
 
 const salt = 'This is not meant to be secure, just remove names and such from search engines'
 exports.anonymizeRow = function (row) {
-  ['firstName', 'lastName', 'dob', 'address'].forEach((field) => {
+  ['firstName', 'lastName', 'dob'].forEach((field) => {
     const hash = crypto.createHash('sha256')
     hash.update(`${salt} ${row[field]}`)
     row[field] = hash.digest('base64')

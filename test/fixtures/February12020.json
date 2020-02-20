@@ -10,10 +10,9 @@
       "bookingDate": "2020-01-31 13:08:53",
       "releaseDate": "2020-02-01 20:05:32",
       "inmateNumber": "IN-0014037",
-      "address": "aulCRWmnstqi0zB2ENAQVxQo9jNPzElHgAJog90GX4o=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "20000.00",
@@ -32,10 +31,9 @@
       "bookingNumber": "B-0014165",
       "bookingDate": "2020-01-31 03:45:27",
       "inmateNumber": "IN-0014028",
-      "address": "AH7ZL9HWq6+xi/1l02MA2n2QQTZanGDgn5zVJCxl8bM=",
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "10000.00",
@@ -71,10 +69,9 @@
       "bookingNumber": "B-0014158",
       "bookingDate": "2020-01-31 01:59:40",
       "inmateNumber": "IN-0014015",
-      "address": "cYa9uaIbtovvDifYfvoNWPmfg72shEheQTHqwtCLi0c=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "15000.00",
@@ -98,10 +95,9 @@
       "bookingDate": "2020-01-31 03:33:49",
       "releaseDate": "2020-01-31 14:48:21",
       "inmateNumber": "IN-0014026",
-      "address": "hsnIHtQ/mdw+YFHTEM67F/TvS8PWZoicS37jTbqkdiU=",
       "zip": "73105",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "167.00",
@@ -129,10 +125,9 @@
       "bookingNumber": "B-0014198",
       "bookingDate": "2020-01-31 20:13:31",
       "inmateNumber": "IN-0014055",
-      "address": "V1RS/Y+bx4eNpk2zbSIJViNL6n3MMHRI4pP5E5lNjlM=",
       "zip": "73018",
       "bookingType": "RE-BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "400.00",
@@ -186,9 +181,8 @@
       "bookingDate": "2020-01-31 18:44:14",
       "releaseDate": "2020-02-01 15:18:08",
       "inmateNumber": "IN-0014050",
-      "address": "ubfbr498/4YOO+aY0Ej/b5biPrA/RvxKfMpJHxD+Os4=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "code": "DT2",
@@ -207,10 +201,9 @@
       "bookingNumber": "B-0014149",
       "bookingDate": "2020-01-31 02:08:54",
       "inmateNumber": "IN-0014017",
-      "address": "d33VUGOGeU0Hmefx0OqnDYrqoCVSB5eUN61xUaBFDo0=",
       "zip": "73127",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "50000.00",
@@ -229,10 +222,9 @@
       "bookingNumber": "B-0014173",
       "bookingDate": "2020-01-31 17:48:06",
       "inmateNumber": "IN-0014043",
-      "address": "7a02XhoAqGXaYwFlfbsLI3XvDdWVseZaRxvwhf9wLxI=",
       "zip": "73111",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "10000.00",
@@ -265,10 +257,9 @@
       "bookingDate": "2020-01-31 03:59:24",
       "releaseDate": "2020-01-31 11:13:50",
       "inmateNumber": "IN-0014030",
-      "address": "ORQYtRhsqCCVbO5atMU0++s7sPCb9esr8/+WA2ZqFWA=",
       "zip": "73104",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -296,10 +287,9 @@
       "bookingNumber": "B-0014169",
       "bookingDate": "2020-01-31 05:36:54",
       "inmateNumber": "IN-0014034",
-      "address": "f2t3aJBWIMOmC+AXTsIqkYulYuEUEBz7A0nHsOMgO7o=",
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -345,10 +335,9 @@
       "bookingNumber": "B-0014159",
       "bookingDate": "2020-01-31 02:12:18",
       "inmateNumber": "IN-0014018",
-      "address": "D1QCBtdcj5hBkhdI1JupetRZ3utSarmKDvMpw5WxpWE=",
       "zip": "73061",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "22-1141.13",
@@ -374,10 +363,9 @@
       "bookingDate": "2020-01-31 01:51:31",
       "releaseDate": "2020-01-31 01:51:51",
       "inmateNumber": "IN-0014012",
-      "address": "JsKeMb7K6J5nA9vOTUGG/cHf/jmKGZlgB1TZcwRXAHg=",
       "zip": "73107",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "50000.00",
@@ -396,9 +384,8 @@
       "bookingNumber": "B-0014144",
       "bookingDate": "2020-01-31 00:02:56",
       "inmateNumber": "IN-0014010",
-      "address": "sYQDC4mKIPCKyRW2MuWGTK78FYSk/VI6QSWfXHOQA/s=",
       "zip": "73139",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "21-644.G",
@@ -415,10 +402,9 @@
       "bookingNumber": "B-0014178",
       "bookingDate": "2020-01-31 15:32:14",
       "inmateNumber": "IN-0014040",
-      "address": "je0jb6+kJ/tkjEH/WYcid9P3nCLRWlEWYeZujEC5Vk0=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "5000.00",
@@ -437,9 +423,8 @@
       "bookingDate": "2020-01-31 18:27:45",
       "releaseDate": "2020-02-01 02:04:04",
       "inmateNumber": "IN-0014049",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "167.00",
@@ -459,9 +444,8 @@
       "bookingNumber": "B-0014201",
       "bookingDate": "2020-01-31 23:41:14",
       "inmateNumber": "IN-0014066",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "21-1531",
@@ -505,10 +489,9 @@
       "bookingDate": "2020-01-31 03:19:09",
       "releaseDate": "2020-01-31 11:14:25",
       "inmateNumber": "IN-0014025",
-      "address": "0Gf7IblPqDF4rooIM6xggl/LCsyQzKO4z1g0qhDHOGs=",
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -537,10 +520,9 @@
       "bookingDate": "2020-01-31 03:42:06",
       "releaseDate": "2020-01-31 11:15:55",
       "inmateNumber": "IN-0014027",
-      "address": "quji/hL4b701XTq3YjbFQWYpvZ0rcHISQtHXSZM9B6I=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -577,10 +559,9 @@
       "bookingDate": "2020-01-31 17:55:00",
       "releaseDate": "2020-02-01 02:01:35",
       "inmateNumber": "IN-0014044",
-      "address": "Axosj9WNRQzno9ekidLXitEmWusrqCv+DPull6+S6aI=",
       "zip": "73129",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -617,10 +598,9 @@
       "bookingDate": "2020-01-31 03:15:09",
       "releaseDate": "2020-01-31 11:15:25",
       "inmateNumber": "IN-0014024",
-      "address": "0Gf7IblPqDF4rooIM6xggl/LCsyQzKO4z1g0qhDHOGs=",
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -649,9 +629,8 @@
       "bookingDate": "2020-01-31 21:50:37",
       "releaseDate": "2020-02-01 20:00:44",
       "inmateNumber": "IN-0014062",
-      "address": "9PvvErMkUQfPSceVrKo9abLQRQWW/QjHfuAZP1qVip8=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "5000.00",
@@ -671,10 +650,9 @@
       "bookingDate": "2020-01-31 18:18:57",
       "releaseDate": "2020-02-01 03:29:41",
       "inmateNumber": "IN-0014048",
-      "address": "2UCmTisETFpZ7Fv5AUj0KK0cqCM50LZ3WGoMxd+rs28=",
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "167.00",
@@ -694,10 +672,9 @@
       "bookingNumber": "B-0014192",
       "bookingDate": "2020-01-31 19:48:29",
       "inmateNumber": "IN-0014052",
-      "address": "l6R8R6h8sZLUv+/5GpWfcwczYGyL8Y/+CTSD3aKq/uw=",
       "zip": "73112",
       "bookingType": "RE-BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "code": "XX5",
@@ -735,9 +712,8 @@
       "bookingNumber": "B-0014172",
       "bookingDate": "2020-01-31 07:59:37",
       "inmateNumber": "IN-0014036",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -763,10 +739,9 @@
       "bookingDate": "2020-01-31 02:20:42",
       "releaseDate": "2020-01-31 02:20:56",
       "inmateNumber": "IN-0014019",
-      "address": "Gw/6B/lQoQB46PDi1Ed6JrV6xeqh8JwzQXpKqFkl6P0=",
       "zip": "73105",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "25000.00",
@@ -785,10 +760,9 @@
       "bookingNumber": "B-0014196",
       "bookingDate": "2020-01-31 21:14:29",
       "inmateNumber": "IN-0014059",
-      "address": "TH3hEMFWaPKZwz2UOxWvLyf5CcIE0cN9wPuM6WslZ3g=",
       "zip": "73119",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -878,10 +852,9 @@
       "bookingDate": "2020-01-31 20:22:36",
       "releaseDate": "2020-02-01 17:30:18",
       "inmateNumber": "IN-0014056",
-      "address": "AMJyMPgb5FufXmf3D29KQ5ce5Bt2SXErJ3IScjoRNE0=",
       "zip": "73114",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "5000.00",
@@ -940,10 +913,9 @@
       "bookingDate": "2020-01-31 20:41:51",
       "releaseDate": "2020-01-31 20:42:13",
       "inmateNumber": "IN-0014058",
-      "address": "eP8jqQhFd2x9JlkjwgpoMTHzXqcpi17tDBfmwRbu9P8=",
       "zip": "73112",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "22-1141.13",
@@ -961,10 +933,9 @@
       "bookingNumber": "B-0014153",
       "bookingDate": "2020-01-31 01:54:56",
       "inmateNumber": "IN-0014013",
-      "address": "bJ9DgDmAi4D9o9J8f9oZvFttryEYWzAmFscnUQRuypU=",
       "zip": "73106",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "1500.00",
@@ -1003,10 +974,9 @@
       "bookingNumber": "B-0014174",
       "bookingDate": "2020-01-31 15:35:28",
       "inmateNumber": "IN-0014041",
-      "address": "ArxmH+tOTnGjVLdYFzbUWTU48ZGIErz6aolMiJJzGO8=",
       "zip": "73103",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "5000.00",
@@ -1031,10 +1001,9 @@
       "bookingDate": "2020-01-31 02:32:02",
       "releaseDate": "2020-01-31 14:47:45",
       "inmateNumber": "IN-0014022",
-      "address": "PVhzAMMRqYz/HDL8ZD0qLRFtX+ZaSW+arx4HN9LKqi4=",
       "zip": "73135",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -1070,10 +1039,9 @@
       "bookingDate": "2020-01-31 20:25:47",
       "releaseDate": "2020-01-31 20:27:00",
       "inmateNumber": "IN-0014057",
-      "address": "AKn95ZVuweXjXx+OjU0aQZzb6NEJDW6m7yQbAr+AE7g=",
       "zip": "73099",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -1093,10 +1061,9 @@
       "bookingNumber": "B-0014204",
       "bookingDate": "2020-01-31 23:47:54",
       "inmateNumber": "IN-0014067",
-      "address": "aS26Xn/pfMYdu6YJWnUAbUKIyVg6+yRIYYZuw8Fs42Q=",
       "zip": "73127",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "22-1141.13",
@@ -1128,10 +1095,9 @@
       "bookingNumber": "B-0014164",
       "bookingDate": "2020-01-31 05:15:41",
       "inmateNumber": "IN-0014032",
-      "address": "9ZoxNTmTJ8gigCGIk1a0sddCwqV12DfTrYcngE6NZOQ=",
       "zip": "73122",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "500.00",
@@ -1227,9 +1193,8 @@
       "bookingNumber": "B-0014170",
       "bookingDate": "2020-01-31 05:22:56",
       "inmateNumber": "IN-0014033",
-      "address": "G9Tkfq3yT3iQDy3PMRhu3HUuG+HCGXUAaCZ3qa3krik=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "3000.00",
@@ -1269,10 +1234,9 @@
       "bookingDate": "2020-01-31 22:19:41",
       "releaseDate": "2020-02-01 03:32:29",
       "inmateNumber": "IN-0014063",
-      "address": "02ha4O7CBTyeqHiRYKK1RlBXGuy/WiwiBgOm75RkTBs=",
       "zip": "73129",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -1293,10 +1257,9 @@
       "bookingDate": "2020-01-31 06:13:41",
       "releaseDate": "2020-02-01 02:01:52",
       "inmateNumber": "IN-0014035",
-      "address": "uqP1Cpd3FNMXPOShpszDOikx9kDiBVLx5NENZgbBB+8=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "bond": "307.00",
@@ -1339,10 +1302,9 @@
       "bookingNumber": "B-0014181",
       "bookingDate": "2020-01-31 18:06:36",
       "inmateNumber": "IN-0014046",
-      "address": "gk+wQOYVCugUUP+X9eIYSuTJrleUDAxkuRGPVJ6s0rg=",
       "zip": "73098",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "22-1141.13",
@@ -1368,9 +1330,8 @@
       "bookingDate": "2020-01-31 02:37:31",
       "releaseDate": "2020-01-31 02:37:46",
       "inmateNumber": "IN-0014023",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "750.00",
@@ -1389,10 +1350,9 @@
       "bookingNumber": "B-0014154",
       "bookingDate": "2020-01-31 02:01:37",
       "inmateNumber": "IN-0014016",
-      "address": "/YaW3Y4flS5s4YPDCFdZ91QRscLXEgyi+AyYiygK47g=",
       "zip": "73119",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "bond": "421.00",
@@ -1438,10 +1398,9 @@
       "bookingNumber": "B-0014160",
       "bookingDate": "2020-01-31 01:57:51",
       "inmateNumber": "IN-0014014",
-      "address": "cGOgLHNbioo0RDHZy1f1vuTzbcZZ24ykAQJ2fQzDuvc=",
       "zip": "73119",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "15000.00",
@@ -1472,10 +1431,9 @@
       "bookingDate": "2020-01-31 19:25:07",
       "releaseDate": "2020-02-01 02:02:10",
       "inmateNumber": "IN-0014051",
-      "address": "AQQ6eRt4JzbajYKu/1zy5cdm5Ctbo4AZMf3rBj8sohY=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "bond": "182.00",
@@ -1511,10 +1469,9 @@
       "bookingNumber": "B-0014176",
       "bookingDate": "2020-01-31 13:12:19",
       "inmateNumber": "IN-0014038",
-      "address": "mJzbZH2Aq+xlK6brFlu1Je1lwlg0/0rXpLTcnhYgCCU=",
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "393.00",
@@ -1547,9 +1504,8 @@
       "bookingDate": "2020-01-31 23:09:58",
       "releaseDate": "2020-02-01 11:39:37",
       "inmateNumber": "IN-0014064",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "167.00",
@@ -1569,10 +1525,9 @@
       "bookingNumber": "B-0014190",
       "bookingDate": "2020-01-31 20:09:00",
       "inmateNumber": "IN-0014054",
-      "address": "7hCzaML/n2GPHWHA6OEMMGaAhuEq/fti6XpQAv/kbGk=",
       "zip": "73099",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "1000.00",
@@ -1591,10 +1546,9 @@
       "bookingDate": "2020-01-31 18:03:40",
       "releaseDate": "2020-01-31 18:03:50",
       "inmateNumber": "IN-0014045",
-      "address": "16olK2wie9x2EvDHYiH1g9DZ6be23lv8FeTucSvicKs=",
       "zip": "73114",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "2000.00",
@@ -1613,9 +1567,8 @@
       "bookingNumber": "B-0014156",
       "bookingDate": "2020-01-31 02:27:25",
       "inmateNumber": "IN-0014021",
-      "address": "VP9PIpBUY+w97YsBrGwiXrNIskYWFpHLXfGGvNOg5lQ=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "5000.00",
@@ -1676,10 +1629,9 @@
       "bookingDate": "2020-01-31 02:24:28",
       "releaseDate": "2020-01-31 02:24:36",
       "inmateNumber": "IN-0014020",
-      "address": "vjVQM0pwly81VgoK/W4Auqnb+EVcJa8KxnukapiFw/Y=",
       "zip": "73119",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "10000.00",
@@ -1698,9 +1650,8 @@
       "bookingNumber": "B-0014206",
       "bookingDate": "2020-01-31 23:37:15",
       "inmateNumber": "IN-0014065",
-      "address": "ubfbr498/4YOO+aY0Ej/b5biPrA/RvxKfMpJHxD+Os4=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "code": "TP1",
@@ -1730,10 +1681,9 @@
       "bookingNumber": "B-0014167",
       "bookingDate": "2020-01-31 04:31:08",
       "inmateNumber": "IN-0014031",
-      "address": "XViOHvIaMBkcukHWqXPX5PUy74pwHFHmbtK0E9Z4XeY=",
       "zip": "73112",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "bond": "15000.00",
@@ -1761,10 +1711,9 @@
       "bookingNumber": "B-0014193",
       "bookingDate": "2020-01-31 21:25:11",
       "inmateNumber": "IN-0014060",
-      "address": "cdp8VDOC6s7rXuQ4kH7Z+rGp2QYxzy6BwJmcbejul5k=",
       "zip": "73106",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "bond": "182.00",
@@ -1804,10 +1753,9 @@
       "bookingNumber": "B-0014195",
       "bookingDate": "2020-01-31 19:58:22",
       "inmateNumber": "IN-0014053",
-      "address": "FJayoHrTNI9nzacXInatN4BB1zq7DJWoIwqyhSuQaGY=",
       "zip": "73122",
       "bookingType": "RE-BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "code": "DP1",
@@ -1837,9 +1785,8 @@
       "bookingNumber": "B-0014168",
       "bookingDate": "2020-01-31 03:52:04",
       "inmateNumber": "IN-0014029",
-      "address": "V0NLABEjFBIf+7JfJqbhMHJynFKhDfdP0qek4u3U0E0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "SS",
           "code": "22-1141.13",
@@ -1865,9 +1812,8 @@
       "bookingDate": "2020-01-31 13:45:16",
       "releaseDate": "2020-01-31 21:46:43",
       "inmateNumber": "IN-0014039",
-      "address": "ubfbr498/4YOO+aY0Ej/b5biPrA/RvxKfMpJHxD+Os4=",
       "bookingType": "RE-BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "JD",
           "bond": "750.00",
@@ -1904,9 +1850,8 @@
       "bookingDate": "2020-01-31 21:34:09",
       "releaseDate": "2020-02-01 05:55:34",
       "inmateNumber": "IN-0014061",
-      "address": "e+cAN1++ZyLv+3F/LMm/JccnjOaVUf8EAr0h9QR1Ki0=",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "CR",
           "bond": "167.00",
@@ -1926,10 +1871,9 @@
       "bookingNumber": "B-0014152",
       "bookingDate": "2020-01-31 01:49:41",
       "inmateNumber": "IN-0014011",
-      "address": "XCUKUt+4Fm3qkFGUrNBV7LL7mJQy23c4kFaIjpEfxng=",
       "zip": "73111",
       "bookingType": "INITIAL BOOKING",
-      "charges": [
+      "offenses": [
         {
           "type": "TR",
           "bond": "45.00",
