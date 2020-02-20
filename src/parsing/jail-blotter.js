@@ -17,6 +17,8 @@ const regexes = {
   type: new RegExp('^([A-Z]{2})$')
 }
 
+const squish = (s) => s.replace(/\s+/g, ' ').trim()
+
 const selectors = {
   text: (expected) => (s, field) => {
     if (s !== expected) {
@@ -35,18 +37,18 @@ const selectors = {
     if (selected == null) {
       throw new ParsingError(`Invalid pattern at ${field}: ${JSON.stringify(s)}`)
     }
-    return { [field]: selected[1] }
+    return { [field]: squish(selected[1]) }
   },
   name: (s, field) => {
     const selected = s.match(regexes.name)
     if (selected == null) {
       throw new ParsingError(`Invalid name at ${field}: ${JSON.stringify(s)}`)
     }
-    const [, lastName, firstName] = selected
-    return { lastName, firstName }
+    const [, last, first] = selected
+    return { lastName: squish(last), firstName: squish(first) }
   },
   freeform: (s, field) => {
-    return { [field]: s.trim() }
+    return { [field]: squish(s) }
   },
   date: (s, field) => {
     const selected = s.match(regexes.date)
@@ -68,66 +70,67 @@ const selectors = {
   }
 }
 
-const exactly = (expected) => (x) => expected === x
-const between = (low, high) => (x) => x >= low && x <= high
+const startsAt = (v) => (x, r, t) => x === v
+const endsAt = (v) => (x, r, t) => t === v
+const centeredOn = (v) => (x, r, t) => r === v
 
 const fields = {
   // Fixed
-  nameLabel: { vx: exactly(40), selector: selectors.text('Name:') },
-  name: { vx: exactly(88), selector: selectors.name },
-  bookingNumberLabel: { vx: exactly(430), selector: selectors.text('Booking #:') },
-  bookingNumber: { vx: exactly(522), selector: selectors.pattern(regexes.bookingNumber) },
-  addressLabel: { vx: exactly(40), selector: selectors.text('Address:') },
-  address: { vx: exactly(89), selector: selectors.freeform },
-  inmateNumberLabel: { vx: exactly(438), selector: selectors.text('Inmate #:') },
-  inmateNumber: { vx: exactly(518), selector: selectors.pattern(regexes.inmateNumber) },
-  sexLabel: { vx: exactly(40), selector: selectors.text('Sex:') },
-  sex: { vx: between(83, 84), selector: selectors.oneOf('M', 'F', 'U') },
-  raceLabel: { vx: exactly(118), selector: selectors.text('Race:') },
-  race: { vx: between(158, 162), selector: selectors.oneOf('W', 'B', 'I', 'U', 'A', 'P') },
-  dobLabel: { vx: exactly(246), selector: selectors.text('DOB:') },
-  dob: { vx: between(277, 283), selector: selectors.date },
-  bookingTypeLabel: { vx: exactly(413), selector: selectors.text('Booking Type:') },
-  bookingType: { vx: between(487, 507), selector: selectors.oneOf('INITIAL BOOKING', 'RE-BOOKING') },
-  bookingDateLabel: { vx: exactly(40), selector: selectors.text('Booking Date:') },
-  bookingDate: { vx: exactly(117), selector: selectors.dateTime },
-  releaseDateLabel: { vx: exactly(246), selector: selectors.text('Release Date:') },
-  releaseDate: { vx: exactly(318), selector: selectors.dateTime },
+  nameLabel: { vx: startsAt(40), selector: selectors.text('Name:') },
+  name: { vx: startsAt(88), selector: selectors.name },
+  bookingNumberLabel: { vx: startsAt(430), selector: selectors.text('Booking #:') },
+  bookingNumber: { vx: startsAt(522), selector: selectors.pattern(regexes.bookingNumber) },
+  addressLabel: { vx: startsAt(40), selector: selectors.text('Address:') },
+  address: { vx: startsAt(89), selector: selectors.freeform },
+  inmateNumberLabel: { vx: startsAt(438), selector: selectors.text('Inmate #:') },
+  inmateNumber: { vx: startsAt(518), selector: selectors.pattern(regexes.inmateNumber) },
+  sexLabel: { vx: startsAt(40), selector: selectors.text('Sex:') },
+  sex: { vx: centeredOn(175), selector: selectors.oneOf('M', 'F', 'U') },
+  raceLabel: { vx: startsAt(118), selector: selectors.text('Race:') },
+  race: { vx: centeredOn(326), selector: selectors.oneOf('W', 'B', 'I', 'U', 'A', 'P') },
+  dobLabel: { vx: startsAt(246), selector: selectors.text('DOB:') },
+  dob: { vx: centeredOn(605), selector: selectors.date },
+  bookingTypeLabel: { vx: startsAt(413), selector: selectors.text('Booking Type:') },
+  bookingType: { vx: endsAt(570), selector: selectors.oneOf('INITIAL BOOKING', 'RE-BOOKING') },
+  bookingDateLabel: { vx: startsAt(40), selector: selectors.text('Booking Date:') },
+  bookingDate: { vx: startsAt(117), selector: selectors.dateTime },
+  releaseDateLabel: { vx: startsAt(246), selector: selectors.text('Release Date:') },
+  releaseDate: { vx: startsAt(318), selector: selectors.dateTime },
   // Table header
-  dispoHeader: { vx: exactly(535), selector: selectors.text('Dispo') },
-  chargeHeader: { vx: exactly(259), selector: selectors.text('Charge') },
-  codeHeader: { vx: exactly(195), selector: selectors.text('Code') },
-  bondHeader: { vx: exactly(483), selector: selectors.text('Bond') },
-  typeHeader: { vx: exactly(42), selector: selectors.text('Type') },
-  citationNumberHeader: { vx: exactly(70), selector: selectors.text('Citation #') },
-  warrantNumberHeader: { vx: exactly(132), selector: selectors.text('Warrant #') },
+  dispoHeader: { vx: startsAt(535), selector: selectors.text('Dispo') },
+  chargeHeader: { vx: startsAt(259), selector: selectors.text('Charge') },
+  codeHeader: { vx: startsAt(195), selector: selectors.text('Code') },
+  bondHeader: { vx: startsAt(483), selector: selectors.text('Bond') },
+  typeHeader: { vx: startsAt(42), selector: selectors.text('Type') },
+  citationNumberHeader: { vx: startsAt(70), selector: selectors.text('Citation #') },
+  warrantNumberHeader: { vx: startsAt(132), selector: selectors.text('Warrant #') },
   // Table rows
-  type: { vx: exactly(42), selector: selectors.pattern(regexes.type) },
-  bond: { vx: between(464, 499), selector: selectors.pattern(regexes.money) },
-  code: { vx: exactly(195), selector: selectors.pattern(regexes.code) },
-  dispo: { vx: between(534, 544), selector: selectors.freeform },
-  charge: { vx: exactly(259), selector: selectors.freeform },
-  warrantNumber: { vx: exactly(132), selector: selectors.pattern(regexes.code) },
-  citationNumber: { vx: exactly(70), selector: selectors.pattern(regexes.code) },
+  type: { vx: startsAt(42), selector: selectors.pattern(regexes.type) },
+  bond: { vx: endsAt(522), selector: selectors.pattern(regexes.money) },
+  code: { vx: startsAt(195), selector: selectors.pattern(regexes.code) },
+  dispo: { vx: centeredOn(1099), selector: selectors.freeform },
+  charge: { vx: startsAt(259), selector: selectors.freeform },
+  warrantNumber: { vx: startsAt(132), selector: selectors.pattern(regexes.code) },
+  citationNumber: { vx: startsAt(70), selector: selectors.pattern(regexes.code) },
   // Page header
-  title: { vx: exactly(169), selector: selectors.text('Oklahoma City Jail Blotter') },
-  subTitle: { vx: exactly(150), selector: selectors.text('Inmates with an Intake Date between:') },
-  subTitleDateFrom: { vx: between(334, 345), selector: selectors.date },
-  subTitleDateTo: { vx: exactly(412), selector: selectors.date },
-  subTitleDatesAnd: { vx: exactly(390), selector: selectors.text('and') },
-  headerDateTime: { vx: between(259, 262), selector: selectors.dateTime },
+  subTitle: { vx: startsAt(150), selector: selectors.text('Inmates with an Intake Date between:') },
+  headerDateTime: { vx: centeredOn(619), selector: selectors.dateTime },
+  title: { vx: startsAt(169), selector: selectors.text('Oklahoma City Jail Blotter') },
+  subTitleDateFrom: { vx: endsAt(384), selector: selectors.date },
+  subTitleDateTo: { vx: startsAt(412), selector: selectors.date },
+  subTitleDatesAnd: { vx: startsAt(390), selector: selectors.text('and') },
   // Page footer
-  pageNumber: { vx: exactly(226), selector: selectors.pattern(regexes.pageNumber) },
-  printDate: { vx: between(411, 417), selector: selectors.pattern(regexes.printDate) },
-  totalInmatesLabel: { vx: exactly(37), selector: selectors.text('Total Number of Inmates:') },
-  totalInmates: { vx: exactly(154), selector: selectors.pattern(regexes.integer) }
+  pageNumber: { vx: startsAt(226), selector: selectors.pattern(regexes.pageNumber) },
+  printDate: { vx: endsAt(496), selector: selectors.pattern(regexes.printDate) },
+  totalInmatesLabel: { vx: startsAt(37), selector: selectors.text('Total Number of Inmates:') },
+  totalInmates: { vx: startsAt(154), selector: selectors.pattern(regexes.integer) }
 }
 
-const take = (field) => c.log(p.satisfy((data) => {
+const take = (field) => c.log(p.satisfy(({ s, left, center, right }) => {
   const { vx, selector } = fields[field]
-  const capture = selector(data.s, field)
-  if (!vx(data.x)) {
-    throw new ParsingError(`Invalid x-coordinate at ${field}: ${data.x}`)
+  const capture = selector(s, field)
+  if (!vx(left, center, right)) {
+    throw new ParsingError(`Invalid x-coordinates for ${field}: ${JSON.stringify(left, center, right)}`)
   }
   return capture
 }), field)
@@ -141,8 +144,14 @@ async function tokenize (buf) {
         normalizeWhitespace: false,
         disableCombineTextItems: false
       })
-      data.items.forEach(({ str, transform }, i, arr) => {
-        tokens.push({ s: str, x: ~~transform[4] })
+      data.items.forEach((data, i, arr) => {
+        const { str, transform, width } = data
+        const x = transform[4]
+        const w = width
+        const left = ~~x
+        const center = ~~(x + x + w)
+        const right = ~~(x + w)
+        tokens.push({ s: str, left, center, right })
       })
     }
   })
@@ -251,7 +260,6 @@ exports.parseJailblotter = async function (buf, debug = true) {
   const allText = await tokenize(buf)
   const tExtractText = Date.now()
   const { data: tokens } = parse(filterTokensGrammar, allText).data
-  // const tokens = ttt
   const tFilterTokens = Date.now()
 
   if (debug) {

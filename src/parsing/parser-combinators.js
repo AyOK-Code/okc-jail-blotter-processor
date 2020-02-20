@@ -15,9 +15,7 @@ parsers.satisfy = (fn) => (init, { tokens }) => {
   const capture = fn(tokens[init])
   return { pos: init + 1, capture }
 }
-
 parsers.accept = (init, state) => parsers.satisfy(x => x)(init, state)
-
 parsers.eof = (init, { tokens }) => {
   if (init < tokens.length) {
     throw new ParsingError(`Not at eof: ${init}/${tokens.length}`)
@@ -130,6 +128,9 @@ const stringJoiner = (c) => (key, p) => combinators.map(
 mappers.join = stringJoiner(combinators.many)
 mappers.join1 = stringJoiner(combinators.many1)
 
+/**********
+*** RUN ***
+**********/
 function parse (parser, tokens, log = []) {
   try {
     const state = { tokens, log }
