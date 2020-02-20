@@ -1,8 +1,15 @@
 class ParsingError extends Error {}
 
-function debug (init, { tokens }) {
-  return `The unexpected data begins at: ${JSON.stringify(tokens.slice(init, init + 10))}`
+const debug = (init, { tokens }) =>
+  `The unexpected data begins at: ${JSON.stringify(tokens.slice(init, init + 15))}`
+
+const checkError = (err) => {
+  if (!(err instanceof ParsingError)) {
+    throw err
+  }
 }
+
+const isEmpty = (obj) => Object.keys(obj).length === 0 && obj.constructor === Object
 
 /**************
 *** PARSERS ***
@@ -15,7 +22,7 @@ parsers.satisfy = (fn) => (init, { tokens }) => {
   const capture = fn(tokens[init])
   return { pos: init + 1, capture }
 }
-parsers.accept = (init, state) => parsers.satisfy(x => x)(init, state)
+parsers.accept = (init, state) => parsers.satisfy((x) => x)(init, state)
 parsers.eof = (init, { tokens }) => {
   if (init < tokens.length) {
     throw new ParsingError(`Not at eof: ${init}/${tokens.length}`)
@@ -43,9 +50,7 @@ combinators.maybe = (p) => (init, state) => {
   try {
     return p(init, state)
   } catch (err) {
-    if (!(err instanceof ParsingError)) {
-      throw err
-    }
+    checkError(err)
     return { pos: init, capture: {} }
   }
 }
@@ -54,41 +59,34 @@ combinators.first = (ps) => (init, state) => {
     try {
       return p(init, state)
     } catch (err) {
-      if (!(err instanceof ParsingError)) {
-        throw err
-      }
+      checkError(err)
     }
   }
   throw new ParsingError(`No valid option. ${debug(init, state)}`)
 }
 combinators.merge = (ps) => (init, state) => {
-  const merged = {}
-  const pos = ps.reduce((acc, p) => {
-    const { pos, capture } = p(acc, state)
-    Object.assign(merged, capture)
-    return pos
-  }, init)
-  return { pos, capture: merged }
+  return ps.reduce(({ pos, capture }, p) => {
+    const parsed = p(pos, state)
+    Object.assign(capture, parsed.capture)
+    return { pos: parsed.pos, capture }
+  }, { pos: init, capture: {} })
 }
 combinators.many = (key, p) => (init, state) => {
   const elements = []
-  let pos = init
+  let i = init
   do {
     try {
-      const parsed = p(pos, state)
-      if (!(Object.keys(parsed.capture).length === 0 && parsed.capture.constructor === Object)) {
-        elements.push(parsed.capture)
+      const { pos, capture } = p(i, state)
+      if (!isEmpty(capture)) {
+        elements.push(capture)
       }
-      // elements.push(parsed.capture)
-      pos = parsed.pos
+      i = pos
     } catch (err) {
-      if (!(err instanceof ParsingError)) {
-        throw err
-      }
-      return { pos, capture: { [key]: elements } }
+      checkError(err)
+      return { pos: i, capture: { [key]: elements } }
     }
-  } while (pos < state.tokens.length)
-  return { pos, capture: { [key]: elements } }
+  } while (i < state.tokens.length)
+  return { pos: i, capture: { [key]: elements } }
 }
 combinators.many1 = (key, p) => (init, state) => {
   const parsed = combinators.many(key, p)(init, state)
@@ -104,9 +102,7 @@ combinators.skipUntil = (p) => (init, state) => {
       p(pos, state)
       return { pos, capture: {} }
     } catch (err) {
-      if (!(err instanceof ParsingError)) {
-        throw err
-      }
+      checkError(err)
     }
     pos++
   } while (pos < state.tokens.length)
@@ -117,10 +113,7 @@ combinators.skipUntil = (p) => (init, state) => {
 *** MAPPERS ***
 **************/
 const mappers = {}
-mappers.ignore = (p) => (init, state) => {
-  const { pos } = p(init, state)
-  return { pos, capture: {} }
-}
+mappers.ignore = (p) => combinators.map(p, () => ({}))
 const stringJoiner = (c) => (key, p) => combinators.map(
   c('lines', p),
   ({ lines }) => ({ [key]: lines.map((x) => x[key]).join(' ') })

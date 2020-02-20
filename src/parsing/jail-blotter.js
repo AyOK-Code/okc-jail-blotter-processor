@@ -14,7 +14,8 @@ const regexes = {
   integer: new RegExp('^([1-9][0-9]*)$'),
   money: new RegExp('^\\$([0-9,]+\\.[0-9]{2})$'),
   code: new RegExp('^([A-Z0-9 ./-]+)$'),
-  type: new RegExp('^([A-Z]{2})$')
+  type: new RegExp('^([A-Z]{2})$'),
+  zip: new RegExp('([0-9]{5}(?:\\-[0-9]+)*)$')
 }
 
 const squish = (s) => s.replace(/\s+/g, ' ').trim()
@@ -217,7 +218,13 @@ const fixedFields = c.merge([
   take('bookingDate'),
   c.maybe(take('releaseDate')),
   take('inmateNumber'),
-  m.join('address', take('address')),
+  c.map(
+    m.join('address', take('address')),
+    ({ address }) => {
+      const selected = address.match(regexes.zip)
+      return selected == null ? { address } : { address, zip: selected[1] }
+    }
+  ),
   c.maybe(take('bookingType')),
   m.ignore(take('bookingTypeLabel'))
 ])
@@ -231,7 +238,12 @@ const charge = c.log(c.merge([
   ),
   c.maybe(take('dispo')),
   m.join1('charge', take('charge')),
-  c.maybe(m.join1('warrantNumber', take('warrantNumber'))),
+  c.maybe(c.map(
+    m.join1('warrantNumber', take('warrantNumber')),
+    ({ warrantNumber: x }) => ({
+      warrantNumber: x.replace(/([^0-9A-Za-z]) /g, (...m) => m[1])
+    })
+  )),
   c.maybe(take('citationNumber')),
 
   // page wrap in the middle of multiline will repeat code and part of charge
