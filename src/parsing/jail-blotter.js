@@ -41,6 +41,9 @@ const selectors = {
     }
     return { [field]: squish(selected[1]) }
   },
+  freeform: (s, field) => {
+    return { [field]: squish(s) }
+  },
   name: (s, field) => {
     const selected = s.match(regexes.name)
     if (selected == null) {
@@ -55,9 +58,6 @@ const selectors = {
       throw new ParsingError(`Invalid money at ${field}: ${JSON.stringify(s)}`)
     }
     return { [field]: selected[1].replace(/,/g, '') }
-  },
-  freeform: (s, field) => {
-    return { [field]: squish(s) }
   },
   date: (s, field) => {
     const selected = s.match(regexes.date)
