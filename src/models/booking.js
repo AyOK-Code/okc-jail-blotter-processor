@@ -1,5 +1,9 @@
 module.exports = (sequelize, DataTypes) => {
   const Booking = sequelize.define('Booking', {
+    pdfId: {
+      allowNull: false,
+      type: DataTypes.INTEGER
+    },
     personId: {
       allowNull: false,
       type: DataTypes.INTEGER
@@ -42,6 +46,7 @@ module.exports = (sequelize, DataTypes) => {
     tableName: 'bookings'
   })
   Booking.associate = function (models) {
+    Booking.belongsTo(models.Pdf)
     Booking.belongsTo(models.Person)
     Booking.hasMany(models.Offense)
   }

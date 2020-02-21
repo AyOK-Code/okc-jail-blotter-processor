@@ -42,11 +42,35 @@ module.exports = {
             type: Sequelize.DATE
           }
         }),
+        queryInterface.createTable('pdfs', {
+          id: {
+            allowNull: false,
+            autoIncrement: true,
+            primaryKey: true,
+            type: Sequelize.INTEGER
+          },
+          postedOn: {
+            allowNull: false,
+            type: Sequelize.DATEONLY
+          },
+          createdAt: {
+            allowNull: false,
+            type: Sequelize.DATE
+          },
+          updatedAt: {
+            allowNull: false,
+            type: Sequelize.DATE
+          }
+        }),
         queryInterface.createTable('bookings', {
           id: {
             allowNull: false,
             autoIncrement: true,
             primaryKey: true,
+            type: Sequelize.INTEGER
+          },
+          pdfId: {
+            allowNull: false,
             type: Sequelize.INTEGER
           },
           personId: {
@@ -153,6 +177,16 @@ module.exports = {
             fields: ['firstName', 'lastName', 'dob']
           },
           { transaction }
+        ),
+        queryInterface.addIndex(
+          'pdfs',
+          {
+            name: 'idx_postedOn',
+            unique: true,
+            using: 'BTREE',
+            fields: ['postedOn']
+          },
+          { transaction }
         )
       ])
     })
@@ -161,6 +195,7 @@ module.exports = {
     return Promise.all([
       queryInterface.dropTable('offenses'),
       queryInterface.dropTable('bookings'),
+      queryInterface.dropTable('pdfs'),
       queryInterface.dropTable('people')
     ])
   }
