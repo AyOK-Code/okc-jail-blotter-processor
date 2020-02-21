@@ -1,194 +1,174 @@
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.sequelize.transaction(async (transaction) => {
-      await Promise.all([
-        queryInterface.createTable('people', {
-          id: {
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true,
-            type: Sequelize.INTEGER
-          },
-          firstName: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          lastName: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          dob: {
-            allowNull: true,
-            type: Sequelize.DATEONLY
-          },
-          sex: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          race: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          zip: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          createdAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          },
-          updatedAt: {
-            allowNull: false,
-            type: Sequelize.DATE
+      await queryInterface.createTable('people', {
+        id: {
+          allowNull: false,
+          autoIncrement: true,
+          primaryKey: true,
+          type: Sequelize.INTEGER
+        },
+        first_name: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        last_name: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        dob: {
+          allowNull: true,
+          type: Sequelize.DATEONLY
+        },
+        sex: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        race: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        zip: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        created_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        },
+        updated_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        }
+      }, { transaction })
+      await queryInterface.createTable('pdfs', {
+        id: {
+          allowNull: false,
+          autoIncrement: true,
+          primaryKey: true,
+          type: Sequelize.INTEGER
+        },
+        posted_on: {
+          allowNull: false,
+          type: Sequelize.DATEONLY
+        },
+        created_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        },
+        updated_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        }
+      }, { transaction })
+      await queryInterface.createTable('bookings', {
+        id: {
+          allowNull: false,
+          autoIncrement: true,
+          primaryKey: true,
+          type: Sequelize.INTEGER
+        },
+        pdf_id: {
+          allowNull: false,
+          type: Sequelize.INTEGER,
+          references: {
+            model: 'pdfs',
+            key: 'id'
           }
-        }),
-        queryInterface.createTable('pdfs', {
-          id: {
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true,
-            type: Sequelize.INTEGER
-          },
-          postedOn: {
-            allowNull: false,
-            type: Sequelize.DATEONLY
-          },
-          createdAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          },
-          updatedAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          }
-        }),
-        queryInterface.createTable('bookings', {
-          id: {
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true,
-            type: Sequelize.INTEGER
-          },
-          pdfId: {
-            allowNull: false,
-            type: Sequelize.INTEGER
-          },
-          personId: {
-            allowNull: false,
-            type: Sequelize.INTEGER
-          },
-          sex: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          race: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          zip: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          inmateNumber: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          bookingNumber: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          bookingType: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          bookingDate: {
-            allowNull: false,
-            type: Sequelize.DATE
-          },
-          releaseDate: {
-            allowNull: true,
-            type: Sequelize.DATE
-          },
-          createdAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          },
-          updatedAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          }
-        }),
-        queryInterface.createTable('offenses', {
-          id: {
-            allowNull: false,
-            autoIncrement: true,
-            primaryKey: true,
-            type: Sequelize.INTEGER
-          },
-          bookingId: {
-            allowNull: false,
-            type: Sequelize.INTEGER
-          },
-          type: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          bond: {
-            allowNull: true,
-            type: Sequelize.DECIMAL(9, 2)
-          },
-          code: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          dispo: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          charge: {
-            allowNull: false,
-            type: Sequelize.TEXT
-          },
-          warrantNumber: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          citationNumber: {
-            allowNull: true,
-            type: Sequelize.TEXT
-          },
-          createdAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          },
-          updatedAt: {
-            allowNull: false,
-            type: Sequelize.DATE
-          }
-        })
-      ])
-      return Promise.all([
-        queryInterface.addIndex(
-          'people',
-          {
-            name: 'idx_identity',
-            unique: true,
-            using: 'BTREE',
-            fields: ['firstName', 'lastName', 'dob']
-          },
-          { transaction }
-        ),
-        queryInterface.addIndex(
-          'pdfs',
-          {
-            name: 'idx_postedOn',
-            unique: true,
-            using: 'BTREE',
-            fields: ['postedOn']
-          },
-          { transaction }
-        )
-      ])
+        },
+        person_id: {
+          allowNull: false,
+          type: Sequelize.INTEGER
+        },
+        sex: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        race: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        zip: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        inmate_number: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        booking_number: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        booking_type: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        booking_date: {
+          allowNull: false,
+          type: Sequelize.DATE
+        },
+        release_date: {
+          allowNull: true,
+          type: Sequelize.DATE
+        },
+        created_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        },
+        updated_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        }
+      }, { transaction })
+      await queryInterface.createTable('offenses', {
+        id: {
+          allowNull: false,
+          autoIncrement: true,
+          primaryKey: true,
+          type: Sequelize.INTEGER
+        },
+        booking_id: {
+          allowNull: false,
+          type: Sequelize.INTEGER
+        },
+        type: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        bond: {
+          allowNull: true,
+          type: Sequelize.DECIMAL(9, 2)
+        },
+        code: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        dispo: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        charge: {
+          allowNull: false,
+          type: Sequelize.TEXT
+        },
+        warrant_number: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        citation_number: {
+          allowNull: true,
+          type: Sequelize.TEXT
+        },
+        created_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        },
+        updated_at: {
+          allowNull: false,
+          type: Sequelize.DATE
+        }
+      }, { transaction })
     })
   },
   down: (queryInterface, Sequelize) => {

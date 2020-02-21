@@ -2,7 +2,8 @@ module.exports = (sequelize, DataTypes) => {
   const Offense = sequelize.define('Offense', {
     bookingId: {
       allowNull: false,
-      type: DataTypes.INTEGER
+      type: DataTypes.INTEGER,
+      field: 'booking_id'
     },
     type: {
       allowNull: false,
@@ -26,14 +27,17 @@ module.exports = (sequelize, DataTypes) => {
     },
     warrantNumber: {
       allowNull: true,
-      type: DataTypes.TEXT
+      type: DataTypes.TEXT,
+      field: 'warrant_number'
     },
     citationNumber: {
       allowNull: true,
-      type: DataTypes.TEXT
+      type: DataTypes.TEXT,
+      field: 'citation_number'
     }
   }, {
     timestamps: true,
+    underscored: true,
     freezeTableName: true,
     tableName: 'offenses'
   })
