@@ -1,17 +1,23 @@
 {
   "name": "okcjb",
   "version": "1.0.0",
+  "engines": {
+    "node": "12.x"
+  },
   "description": "",
   "main": "index.js",
   "scripts": {
-    "download-fixtures": "scripts/download-fixtures.sh",
+    "prestart": "npm run migrate",
+    "start": "node src/index.js",
     "migrate": "cd src && npx sequelize-cli db:migrate",
+    "download-fixtures": "scripts/download-fixtures.sh",
     "test": "mocha --delay"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
     "axios": "^0.19.2",
+    "bottleneck": "^2.19.5",
     "cheerio": "^1.0.0-rc.3",
     "moment": "^2.24.0",
     "pdf-parse": "1.1.1",

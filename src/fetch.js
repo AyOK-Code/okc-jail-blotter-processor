@@ -14,16 +14,15 @@ exports.getLinks = async function () {
     throw new Error(`Got HTTP ${res.status} (${res.statusText}) when attempting to fetch new PDFs.`)
   }
 
-  const $ = cheerio.load(res.data)
-  const links = $('.document_widget a').toArray()
+  return cheerio.load(res.data)('.document_widget a').toArray()
     .map(({ attribs, children }) => ({
       href: attribs != null ? attribs.href : null,
       date: (children != null ? children : [])
         .filter(({ type, data }) => type === 'text')
         .map(({ data }) => moment(data, 'MMM D, YYYY'))[0]
     }))
-    .filter(({ href, date }) => date.isValid())
-  return links
+    .filter(({ href, date }) => href != null && date.isValid())
+    .map(({ href, date }) => ({ href, postedOn: date.format('YYYY-MM-DD') }))
 }
 
 const drain = (stream) => new Promise((resolve, reject) => {

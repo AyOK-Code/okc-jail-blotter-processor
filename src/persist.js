@@ -1,32 +1,45 @@
 const Sequelize = require('sequelize')
 const { Person, Pdf, Booking, Offense } = require('./models')
+const config = require('./config/config').development
 
-exports.save = async function (config, parsed, postedOn) {
+exports.filterLinks = async function (links) {
+  const pdfs = await Pdf.findAll({
+    where: {
+      postedOn: links.map(({ postedOn }) => postedOn)
+    }
+  })
+  const existing = new Set(pdfs.map((x) => x.postedOn))
+  return links.filter(({ postedOn }) => !existing.has(postedOn))
+}
+
+exports.save = async function (processed) {
+  if (processed.length === 0) {
+    return
+  }
   const sequelize = new Sequelize(config)
-  await sequelize.authenticate()
-  console.log('Authenticated!')
 
   await sequelize.transaction(async (transaction) => {
-    const pdf = await Pdf.create(
-      { postedOn: postedOn.format('YYYY-MM-DD') },
-      { transaction }
-    )
-
-    await Promise.all(parsed.rows.map(async (row) => {
-      const [person] = await Person.upsert(
-        row,
-        { transaction, returning: true }
-      )
-
-      const booking = await Booking.create(
-        { ...row, personId: person.id, pdfId: pdf.id },
+    await Promise.all(processed.map(async ({ rows, postedOn }) => {
+      const pdf = await Pdf.create(
+        { postedOn },
         { transaction }
       )
+      await Promise.all(rows.map(async (row) => {
+        const [person] = await Person.upsert(
+          row,
+          { transaction, returning: true }
+        )
 
-      await Offense.bulkCreate(
-        row.offenses.map((offense) => ({ ...offense, bookingId: booking.id })),
-        { transaction }
-      )
+        const booking = await Booking.create(
+          { ...row, personId: person.id, pdfId: pdf.id },
+          { transaction }
+        )
+
+        await Offense.bulkCreate(
+          row.offenses.map((offense) => ({ ...offense, bookingId: booking.id })),
+          { transaction }
+        )
+      }))
     }))
   })
 
