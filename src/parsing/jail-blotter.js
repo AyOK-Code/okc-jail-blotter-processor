@@ -253,9 +253,11 @@ const offense = c.log(c.merge([
   )),
   c.maybe(take('citationNumber')),
 
-  // page wrap in the middle of multiline will repeat code and part of charge
-  m.ignore(c.maybe(c.many1('code wrap', take('code')))),
-  m.ignore(c.maybe(c.many1('charge wrap', take('charge'))))
+  // page wrap in the middle of multiline will repeat code, part of charge, warrant number and citation number
+  m.ignore(c.many('code wrap', take('code'))),
+  m.ignore(c.many('charge wrap', take('charge'))),
+  m.ignore(c.many('warrantNumber wrap', take('warrantNumber'))),
+  m.ignore(c.many('citationNumber wrap', take('citationNumber')))
 
 ]), 'offense row')
 

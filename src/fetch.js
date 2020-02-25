@@ -4,7 +4,10 @@ const moment = require('moment')
 
 const client = axios.create({
   baseURL: 'https://www.okc.gov',
-  timeout: 30 * 1000
+  timeout: 30 * 1000,
+  headers: {
+    'user-agent': ''
+  }
 })
 
 exports.getLinks = async function () {
