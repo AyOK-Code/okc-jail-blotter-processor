@@ -42,7 +42,7 @@ async function main () {
     const target = file.replace(/[.]pdf$/, '.json')
     await promisify(fs.writeFile)(target, JSON.stringify({ rows: processed[0].rows }, null, 2))
     console.log(`Updated ${target}`)
-  } else {
+  } else if (file == null || (file != null && command === 'save')) {
     await save(processed)
   }
 

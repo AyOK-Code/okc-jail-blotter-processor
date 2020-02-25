@@ -49,6 +49,10 @@ To update the test data for that file:
 ```sh
 node src/index.js test/fixtures/some_specific_file.pdf update
 ```
+To save that file to the database:
+```sh
+node src/index.js test/fixtures/some_specific_file.pdf save
+```
 
 ### Inspecting the DB
 As usual make sure the DB is running (`docker-compose up`).
