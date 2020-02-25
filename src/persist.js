@@ -1,15 +1,21 @@
 const Sequelize = require('sequelize')
 const { Person, Pdf, Booking, Offense } = require('./models')
-const config = require('./config/config').development
+const env = process.env.NODE_ENV || 'development'
+const config = require('./config/config')[env]
 
 exports.filterLinks = async function (links) {
-  const pdfs = await Pdf.findAll({
-    where: {
-      postedOn: links.map(({ postedOn }) => postedOn)
-    }
+  const sequelize = new Sequelize(config)
+  const result = await sequelize.transaction(async (transaction) => {
+    const pdfs = await Pdf.findAll({
+      where: {
+        postedOn: links.map(({ postedOn }) => postedOn)
+      }
+    })
+    const existing = new Set(pdfs.map((x) => x.postedOn))
+    return links.filter(({ postedOn }) => !existing.has(postedOn))
   })
-  const existing = new Set(pdfs.map((x) => x.postedOn))
-  return links.filter(({ postedOn }) => !existing.has(postedOn))
+  await sequelize.close()
+  return result
 }
 
 exports.save = async function (processed) {
