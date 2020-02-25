@@ -4,8 +4,11 @@ const moment = require('moment')
 const { parseJailblotter, anonymizeRow } = require('./parsing/jail-blotter')
 const { filterLinks, save } = require('./persist')
 const { getLinks, fetchPdf } = require('./fetch')
+const raygun = require('raygun')
+const raygunClient = new raygun.Client().init({ apiKey: process.env.RAYGUN_API_KEY })
 const Bottleneck = require('bottleneck')
 const limiter = new Bottleneck({ maxConcurrent: 1, minTime: 1000 })
+limiter.on('error', (e) => raygunClient.send(e))
 
 async function main () {
   const [, , file, command] = process.argv
@@ -51,6 +54,13 @@ async function main () {
 
 main()
   .catch(e => {
-    console.error(e)
-    process.exit(1)
+    const cb = () => {
+      console.error(e)
+      process.exit(1)
+    }
+    if (process.env.RAYGUN_API_KEY != null) {
+      raygunClient.send(e, {}, cb)
+    } else {
+      cb()
+    }
   })
