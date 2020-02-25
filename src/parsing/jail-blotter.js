@@ -231,10 +231,7 @@ const fixedFields = c.merge([
     ({ address }) => {
       const zip = address.match(regexes.zip)
       const transient = address.match(regexes.transient)
-      return {
-        zip: zip != null ? zip[1] : null,
-        transient: transient != null
-      }
+      return Object.assign({ transient: transient != null }, zip != null ? { zip: zip[1] } : {})
     }
   ),
   c.maybe(take('bookingType')),
