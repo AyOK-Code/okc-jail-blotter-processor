@@ -32,6 +32,10 @@ module.exports = {
           allowNull: true,
           type: Sequelize.TEXT
         },
+        transient: {
+          allowNull: false,
+          type: Sequelize.BOOLEAN
+        },
         created_at: {
           allowNull: false,
           type: Sequelize.DATE
@@ -91,6 +95,10 @@ module.exports = {
         zip: {
           allowNull: true,
           type: Sequelize.TEXT
+        },
+        transient: {
+          allowNull: false,
+          type: Sequelize.BOOLEAN
         },
         inmate_number: {
           allowNull: false,

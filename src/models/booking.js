@@ -22,6 +22,10 @@ module.exports = (sequelize, DataTypes) => {
       allowNull: true,
       type: DataTypes.TEXT
     },
+    transient: {
+      allowNull: false,
+      type: DataTypes.BOOLEAN
+    },
     inmateNumber: {
       allowNull: false,
       type: DataTypes.TEXT,

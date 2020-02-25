@@ -4,14 +4,13 @@ const moment = require('moment')
 
 const client = axios.create({
   baseURL: 'https://www.okc.gov',
-  timeout: 30 * 1000,
-  headers: {
-    'user-agent': ''
-  }
+  timeout: 30 * 1000
 })
 
 exports.getLinks = async function () {
-  const res = await client.get('/departments/police/crime-prevention-data/jail-blotter')
+  const url = '/departments/police/crime-prevention-data/jail-blotter'
+  console.log(`Fetching ${url}`)
+  const res = await client.get(url)
   if (res.status !== 200) {
     console.error(res.headers)
     throw new Error(`Got HTTP ${res.status} (${res.statusText}) when attempting to fetch new PDFs.`)
@@ -43,6 +42,7 @@ const drain = (stream) => new Promise((resolve, reject) => {
 })
 
 exports.fetchPdf = async function (href) {
+  console.log(`Fetching ${href}`)
   const res = await client.get(href, {
     responseType: 'stream'
   })

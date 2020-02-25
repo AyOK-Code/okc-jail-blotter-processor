@@ -11,8 +11,3 @@ services:
     command: "-c 'work_mem=16MB' -c 'maintenance_work_mem=128MB'"
     ports:
       - "5432:5432"
-    volumes:
-      - jail-blotter-data:/var/lib/postgresql/data
-
-volumes:
-  jail-blotter-data:

@@ -25,6 +25,10 @@ module.exports = (sequelize, DataTypes) => {
     zip: {
       allowNull: true,
       type: DataTypes.TEXT
+    },
+    transient: {
+      allowNull: false,
+      type: DataTypes.BOOLEAN
     }
   }, {
     timestamps: true,

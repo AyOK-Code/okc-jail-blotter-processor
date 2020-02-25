@@ -16,7 +16,8 @@ const regexes = {
   money: new RegExp('^\\$([0-9,]+\\.[0-9]{2})$'),
   code: new RegExp('^([A-Z0-9 ./-]+)$'),
   type: new RegExp('^([A-Z]{2})$'),
-  zip: new RegExp('([0-9]{5}(?:\\-[0-9]+)*)$')
+  zip: new RegExp('([0-9]{5}(?:\\-[0-9]+)*)$'),
+  transient: new RegExp('(transient)', 'i')
 }
 
 const squish = (s) => s.replace(/\s+/g, ' ').trim()
@@ -228,8 +229,12 @@ const fixedFields = c.merge([
   c.map(
     m.join('address', take('address')),
     ({ address }) => {
-      const selected = address.match(regexes.zip)
-      return selected == null ? {} : { zip: selected[1] }
+      const zip = address.match(regexes.zip)
+      const transient = address.match(regexes.transient)
+      return {
+        zip: zip != null ? zip[1] : null,
+        transient: transient != null
+      }
     }
   ),
   c.maybe(take('bookingType')),
