@@ -40,21 +40,22 @@ To shut down the DB and wipe all temporary data, run `docker-compose down`.
 ### Manually parsing a single PDF
 As usual make sure the DB is running (`docker-compose up`).
 ```sh
-cd src
-node index.js ../test/fixtures/some_specific_file.pdf
+npm run migrate
+node src/index.js test/fixtures/some_specific_file.pdf
 ```
 Then inspect `tokens.txt` and `parsed.json`
 
 To update the test data for that file:
 ```sh
-node index.js ../test/fixtures/some_specific_file.pdf update
+node src/index.js test/fixtures/some_specific_file.pdf update
 ```
 
 ### Inspecting the DB
 As usual make sure the DB is running (`docker-compose up`).
 ```sh
-PGPASSWORD=Password123 psql -h localhost -U postgres
+npm run psql
 ```
+If you do not have `psql` you can install it by running: `brew install postgresql`.
 
 ### DB changes
 1. Create a new migration file, the migration file's name must match the pattern and have the current date and time.
