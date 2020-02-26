@@ -9,9 +9,10 @@ const raygunClient = new raygun.Client().init({ apiKey: process.env.RAYGUN_API_K
 const Bottleneck = require('bottleneck')
 const limiter = new Bottleneck({ maxConcurrent: 1, minTime: 1000 })
 limiter.on('error', (e) => raygunClient.send(e))
+const express = require('express')
+const bodyParser = require('body-parser')
 
-async function main () {
-  const [, , file, command] = process.argv
+async function run (file, command) {
   const pdfs = await (async () => {
     if (file != null) {
       const buf = await promisify(fs.readFile)(file)
@@ -52,15 +53,46 @@ async function main () {
   console.log('Done')
 }
 
-main()
-  .catch(e => {
-    const cb = () => {
-      console.error(e)
-      process.exit(1)
-    }
-    if (process.env.RAYGUN_API_KEY != null) {
-      raygunClient.send(e, {}, cb)
+const [, , file, command] = process.argv
+if (file == null) {
+  if (process.env.PORT == null) {
+    throw new Error('The PORT environment variable is undefined')
+  }
+  if (process.env.AUTH_TOKEN == null) {
+    throw new Error('The AUTH_TOKEN environment variable is undefined')
+  }
+  const app = express()
+  app.use(bodyParser.json({ limit: '10Mb', type: '*/*' }))
+  app.post('/run', async function (req, res, next) {
+    if (req.body.token !== process.env.AUTH_TOKEN) {
+      console.log(`403. Invalid auth token: ${req.body.token}`)
+      res.status(403).send({ message: 'Invalid auth token' })
     } else {
-      cb()
+      await run()
+      res.status(200).send()
     }
   })
+
+  app.use(function (err, req, res, next) {
+    console.error(err.stack)
+    res.status(500).send({ message: err.message })
+    raygunClient.send(err, {}, (response) => {}, req)
+  })
+  app.listen(
+    process.env.PORT,
+    () => console.log(`Started on port ${process.env.PORT}`)
+  )
+} else {
+  run(file, command)
+    .catch(e => {
+      const cb = () => {
+        console.error(e)
+        process.exit(1)
+      }
+      if (process.env.RAYGUN_API_KEY != null) {
+        raygunClient.send(e, {}, cb)
+      } else {
+        cb()
+      }
+    })
+}

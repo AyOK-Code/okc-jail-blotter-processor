@@ -30,12 +30,16 @@ npm test
 ```
 
 ### Running the app
-This will fetch, process and save all PDFs currently listed online. This is the command invoked by the Heroku Scheduler.
+Start the server.
 ```sh
 docker-compose up
-npm start
+AUTH_TOKEN=abc PORT=8080 npm start
 ```
-To shut down the DB and wipe all temporary data, run `docker-compose down`.
+Run the job.
+```sh
+curl -X POST -d '{"token":"abc"}' localhost:8080/run
+```
+To shut down the DB and remove all local DB data, run `docker-compose down`.
 
 ### Manually parsing a single PDF
 As usual make sure the DB is running (`docker-compose up`).
@@ -67,3 +71,10 @@ If you do not have `psql` you can install it by running: `brew install postgresq
 3. Update the model files.
 4. Verify that it works: `docker-compose down && docker-compose up`, then `npm start`.
 5. Finally but most importantly: have someone knowledgeable review your changes.
+
+### Deploying to production
+
+Due to the low frequency of changes, this process is not fully automated.
+1. Test all changes locally
+2. Commit and push the changes
+3. Run `./scripts/push.sh`
