@@ -78,3 +78,5 @@ Due to the low frequency of changes, this process is not fully automated.
 1. Test all changes locally
 2. Commit and push the changes
 3. Run `./scripts/push.sh`
+4. Still in the Google Cloud Console, go to Cloud Run, jail-blotter-processor, click Deploy New Revision, use the Select button to pick the latest image.
+5. At the bottom of the page, click Deploy
