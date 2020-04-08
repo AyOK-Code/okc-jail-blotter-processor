@@ -10,6 +10,7 @@
       "bookingDate": "2020-02-22 00:00:00",
       "releaseDate": "2020-02-23 09:52:42",
       "inmateNumber": "IN-0015143",
+      "transient": false,
       "zip": "73120",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -41,6 +42,7 @@
       "bookingDate": "2020-02-22 23:27:59",
       "releaseDate": "2020-02-23 14:36:46",
       "inmateNumber": "IN-0015156",
+      "transient": false,
       "zip": "73129",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -72,6 +74,7 @@
       "bookingDate": "2020-02-22 00:14:49",
       "releaseDate": "2020-02-23 15:03:20",
       "inmateNumber": "IN-0015112",
+      "transient": false,
       "zip": "73159",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -125,6 +128,7 @@
       "bookingDate": "2020-02-22 03:12:19",
       "releaseDate": "2020-02-22 05:26:11",
       "inmateNumber": "IN-0015125",
+      "transient": false,
       "zip": "74804",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -172,6 +176,7 @@
       "bookingDate": "2020-02-22 22:43:53",
       "releaseDate": "2020-02-23 04:59:43",
       "inmateNumber": "IN-0015152",
+      "transient": false,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -199,6 +204,7 @@
       "bookingDate": "2020-02-22 20:49:42",
       "releaseDate": "2020-02-23 05:13:03",
       "inmateNumber": "IN-0015140",
+      "transient": false,
       "zip": "73135",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -253,6 +259,7 @@
       "bookingNumber": "B-0015264",
       "bookingDate": "2020-02-22 04:12:47",
       "inmateNumber": "IN-0015127",
+      "transient": false,
       "zip": "73107",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -273,6 +280,7 @@
       "bookingNumber": "B-0015267",
       "bookingDate": "2020-02-22 08:24:14",
       "inmateNumber": "IN-0015132",
+      "transient": false,
       "zip": "73122",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -294,6 +302,7 @@
       "bookingDate": "2020-02-22 16:05:57",
       "releaseDate": "2020-02-23 05:34:27",
       "inmateNumber": "IN-0015135",
+      "transient": false,
       "zip": "74851",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -323,6 +332,7 @@
       "bookingDate": "2020-02-22 07:49:28",
       "releaseDate": "2020-02-22 14:33:11",
       "inmateNumber": "IN-0015131",
+      "transient": false,
       "zip": "73105",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -353,6 +363,7 @@
       "bookingNumber": "B-0015278",
       "bookingDate": "2020-02-22 20:57:14",
       "inmateNumber": "IN-0015142",
+      "transient": false,
       "zip": "73114",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -394,6 +405,7 @@
       "bookingDate": "2020-02-22 02:58:41",
       "releaseDate": "2020-02-22 14:36:36",
       "inmateNumber": "IN-0015124",
+      "transient": false,
       "zip": "73160",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -425,6 +437,7 @@
       "bookingDate": "2020-02-22 21:28:06",
       "releaseDate": "2020-02-23 05:39:48",
       "inmateNumber": "IN-0015147",
+      "transient": false,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -446,6 +459,7 @@
       "bookingDate": "2020-02-22 22:08:42",
       "releaseDate": "2020-02-24 04:54:48",
       "inmateNumber": "IN-0015151",
+      "transient": false,
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -502,6 +516,7 @@
       "bookingNumber": "B-0015269",
       "bookingDate": "2020-02-22 00:00:00",
       "inmateNumber": "IN-0015130",
+      "transient": false,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -543,6 +558,7 @@
       "bookingDate": "2020-02-22 00:00:00",
       "releaseDate": "2020-02-22 18:47:40",
       "inmateNumber": "IN-0015119",
+      "transient": false,
       "zip": "73127",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -573,6 +589,7 @@
       "bookingDate": "2020-02-22 02:20:24",
       "releaseDate": "2020-02-22 00:00:00",
       "inmateNumber": "IN-0015118",
+      "transient": false,
       "zip": "76148",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -606,6 +623,7 @@
       "bookingDate": "2020-02-22 00:00:00",
       "releaseDate": "2020-02-23 14:15:29",
       "inmateNumber": "IN-0015158",
+      "transient": true,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -628,6 +646,7 @@
       "bookingDate": "2020-02-22 22:05:54",
       "releaseDate": "2020-02-23 14:12:35",
       "inmateNumber": "IN-0015150",
+      "transient": false,
       "zip": "73112",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -650,6 +669,7 @@
       "bookingNumber": "B-0015277",
       "bookingDate": "2020-02-22 20:54:47",
       "inmateNumber": "IN-0015141",
+      "transient": false,
       "zip": "73115",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -711,6 +731,7 @@
       "bookingDate": "2020-02-22 04:30:08",
       "releaseDate": "2020-02-22 20:19:43",
       "inmateNumber": "IN-0015129",
+      "transient": false,
       "zip": "73129",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -734,6 +755,7 @@
       "bookingDate": "2020-02-22 01:47:49",
       "releaseDate": "2020-02-23 19:24:31",
       "inmateNumber": "IN-0015114",
+      "transient": false,
       "zip": "73114",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -778,6 +800,7 @@
       "bookingDate": "2020-02-22 02:18:40",
       "releaseDate": "2020-02-22 05:23:58",
       "inmateNumber": "IN-0015117",
+      "transient": false,
       "zip": "73115",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -813,6 +836,7 @@
       "bookingNumber": "B-0015254",
       "bookingDate": "2020-02-22 00:00:00",
       "inmateNumber": "IN-0015120",
+      "transient": false,
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -915,6 +939,7 @@
       "bookingNumber": "B-0015260",
       "bookingDate": "2020-02-22 00:00:00",
       "inmateNumber": "IN-0015123",
+      "transient": true,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -992,6 +1017,7 @@
       "bookingDate": "2020-02-22 11:34:09",
       "releaseDate": "2020-02-23 15:00:27",
       "inmateNumber": "IN-0015133",
+      "transient": false,
       "zip": "73108",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1111,6 +1137,7 @@
       "bookingDate": "2020-02-22 00:00:00",
       "releaseDate": "2020-02-23 10:17:15",
       "inmateNumber": "IN-0015145",
+      "transient": true,
       "zip": "73162",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1133,6 +1160,7 @@
       "bookingNumber": "B-0015284",
       "bookingDate": "2020-02-22 21:40:05",
       "inmateNumber": "IN-0015148",
+      "transient": false,
       "zip": "73117",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1195,6 +1223,7 @@
       "bookingNumber": "B-0015281",
       "bookingDate": "2020-02-22 21:49:08",
       "inmateNumber": "IN-0015149",
+      "transient": false,
       "zip": "73104",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1226,6 +1255,7 @@
       "bookingNumber": "B-0015300",
       "bookingDate": "2020-02-22 23:49:05",
       "inmateNumber": "IN-0015159",
+      "transient": false,
       "zip": "73064",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1271,6 +1301,7 @@
       "bookingDate": "2020-02-22 02:46:21",
       "releaseDate": "2020-02-23 06:52:37",
       "inmateNumber": "IN-0015121",
+      "transient": false,
       "zip": "73115",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1314,6 +1345,7 @@
       "bookingDate": "2020-02-22 23:14:22",
       "releaseDate": "2020-02-23 09:49:22",
       "inmateNumber": "IN-0015154",
+      "transient": false,
       "zip": "73111",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1344,6 +1376,7 @@
       "bookingNumber": "B-0015276",
       "bookingDate": "2020-02-22 16:21:46",
       "inmateNumber": "IN-0015137",
+      "transient": false,
       "zip": "73159",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1385,6 +1418,7 @@
       "bookingNumber": "B-0015259",
       "bookingDate": "2020-02-22 04:22:10",
       "inmateNumber": "IN-0015128",
+      "transient": false,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -1405,6 +1439,7 @@
       "bookingDate": "2020-02-22 23:02:40",
       "releaseDate": "2020-02-23 22:43:53",
       "inmateNumber": "IN-0015153",
+      "transient": false,
       "zip": "73119",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1441,6 +1476,7 @@
       "bookingNumber": "B-0015253",
       "bookingDate": "2020-02-22 02:46:43",
       "inmateNumber": "IN-0015122",
+      "transient": false,
       "zip": "73162",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1477,6 +1513,7 @@
       "bookingDate": "2020-02-22 00:00:00",
       "releaseDate": "2020-02-22 14:29:32",
       "inmateNumber": "IN-0015116",
+      "transient": false,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -1506,6 +1543,7 @@
       "bookingNumber": "B-0015275",
       "bookingDate": "2020-02-22 16:15:48",
       "inmateNumber": "IN-0015136",
+      "transient": false,
       "zip": "73107",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1531,6 +1569,7 @@
       "bookingNumber": "B-0015285",
       "bookingDate": "2020-02-22 21:06:35",
       "inmateNumber": "IN-0015144",
+      "transient": false,
       "zip": "73106",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1573,6 +1612,7 @@
       "bookingNumber": "B-0015294",
       "bookingDate": "2020-02-22 23:36:11",
       "inmateNumber": "IN-0015157",
+      "transient": false,
       "zip": "73112",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1628,6 +1668,7 @@
       "bookingNumber": "B-0015261",
       "bookingDate": "2020-02-22 03:37:10",
       "inmateNumber": "IN-0015126",
+      "transient": false,
       "zip": "73018",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1648,6 +1689,7 @@
       "bookingNumber": "B-0015241",
       "bookingDate": "2020-02-22 01:12:26",
       "inmateNumber": "IN-0015113",
+      "transient": false,
       "zip": "73521",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1676,6 +1718,7 @@
       "bookingDate": "2020-02-22 21:19:45",
       "releaseDate": "2020-02-23 15:08:33",
       "inmateNumber": "IN-0015146",
+      "transient": true,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -1698,6 +1741,7 @@
       "bookingDate": "2020-02-22 13:10:21",
       "releaseDate": "2020-02-22 20:18:34",
       "inmateNumber": "IN-0015134",
+      "transient": false,
       "zip": "73111",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1720,6 +1764,7 @@
       "bookingNumber": "B-0015295",
       "bookingDate": "2020-02-22 23:15:21",
       "inmateNumber": "IN-0015155",
+      "transient": false,
       "zip": "73111",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
@@ -1775,6 +1820,7 @@
       "bookingDate": "2020-02-22 20:07:48",
       "releaseDate": "2020-02-23 09:15:19",
       "inmateNumber": "IN-0015138",
+      "transient": true,
       "bookingType": "INITIAL BOOKING",
       "offenses": [
         {
@@ -1805,6 +1851,7 @@
       "bookingDate": "2020-02-22 20:47:10",
       "releaseDate": "2020-02-22 22:33:02",
       "inmateNumber": "IN-0015139",
+      "transient": false,
       "zip": "73109",
       "bookingType": "INITIAL BOOKING",
       "offenses": [
