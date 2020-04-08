@@ -12,6 +12,18 @@ limiter.on('error', (e) => raygunClient.send(e))
 const express = require('express')
 const bodyParser = require('body-parser')
 
+function errorHandler (e, userCb) {
+  const cb = () => {
+    console.error(e)
+    userCb()
+  }
+  if (process.env.RAYGUN_API_KEY != null) {
+    raygunClient.send(e, {}, cb)
+  } else {
+    cb()
+  }
+}
+
 async function run (file, command) {
   const pdfs = await (async () => {
     if (file != null) {
@@ -64,12 +76,16 @@ if (file == null) {
   const app = express()
   app.use(bodyParser.json({ limit: '10Mb', type: '*/*' }))
   app.post('/run', async function (req, res, next) {
-    if (req.body.token !== process.env.AUTH_TOKEN) {
-      console.log(`403. Invalid auth token: ${req.body.token}`)
-      res.status(403).send({ message: 'Invalid auth token' })
-    } else {
-      await run()
-      res.status(200).send()
+    try {
+      if (req.body.token !== process.env.AUTH_TOKEN) {
+        console.log(`403. Invalid auth token: ${req.body.token}`)
+        res.status(403).send({ message: 'Invalid auth token' })
+      } else {
+        await run()
+        res.status(200).send()
+      }
+    } catch (e) {
+      errorHandler(e, () => res.status(500).send())
     }
   })
 
@@ -83,16 +99,5 @@ if (file == null) {
     () => console.log(`Started on port ${process.env.PORT}`)
   )
 } else {
-  run(file, command)
-    .catch(e => {
-      const cb = () => {
-        console.error(e)
-        process.exit(1)
-      }
-      if (process.env.RAYGUN_API_KEY != null) {
-        raygunClient.send(e, {}, cb)
-      } else {
-        cb()
-      }
-    })
+  run(file, command).catch((e) => errorHandler(e, () => process.exit(1)))
 }
