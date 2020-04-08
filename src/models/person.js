@@ -19,7 +19,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.TEXT
     },
     race: {
-      allowNull: false,
+      allowNull: true,
       type: DataTypes.TEXT
     },
     zip: {
