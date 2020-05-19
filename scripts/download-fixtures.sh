@@ -3,6 +3,8 @@
 set -euo pipefail
 
 ALL_IDS=(
+  17070
+  17000
   16884
   16617
   16386
@@ -64,6 +66,8 @@ ALL_IDS=(
   15872
 )
 ALL_NAMES=(
+  May122020.pdf
+  May42020.pdf
   April242020.pdf
   April32020.pdf
   March132020.pdf

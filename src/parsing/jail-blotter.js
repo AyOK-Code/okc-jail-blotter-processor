@@ -97,11 +97,11 @@ const fields = {
   sexLabel: { vx: startsAt(40), selector: selectors.text('Sex:') },
   sex: { vx: centeredOn(175), selector: selectors.oneOf('M', 'F', 'U') },
   raceLabel: { vx: startsAt(118), selector: selectors.text('Race:') },
-  race: { vx: centeredOn(326), selector: selectors.oneOf('W', 'B', 'I', 'U', 'A', 'P') },
+  race: { vx: centeredOn(326), selector: selectors.oneOf('W', 'B', 'I', 'U', 'A', 'P', 'M') },
   dobLabel: { vx: startsAt(246), selector: selectors.text('DOB:') },
   dob: { vx: centeredOn(605), selector: selectors.date },
   bookingTypeLabel: { vx: startsAt(413), selector: selectors.text('Booking Type:') },
-  bookingType: { vx: endsAt(570), selector: selectors.oneOf('INITIAL BOOKING', 'RE-BOOKING') },
+  bookingType: { vx: endsAt(570), selector: selectors.oneOf('INITIAL BOOKING', 'RE-BOOKING', 'WEEKENDER', 'BOOKING') },
   bookingDateLabel: { vx: startsAt(40), selector: selectors.text('Booking Date:') },
   bookingDate: { vx: startsAt(117), selector: selectors.dateTime },
   releaseDateLabel: { vx: startsAt(246), selector: selectors.text('Release Date:') },
@@ -234,7 +234,7 @@ const fixedFields = c.merge([
       return Object.assign({ transient: transient != null }, zip != null ? { zip: zip[1] } : {})
     }
   ),
-  c.maybe(take('bookingType')),
+  c.maybe(m.join1('bookingType', take('bookingType'))),
   m.ignore(take('bookingTypeLabel'))
 ])
 
