@@ -15,7 +15,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DATEONLY
     },
     sex: {
-      allowNull: false,
+      allowNull: true,
       type: DataTypes.TEXT
     },
     race: {

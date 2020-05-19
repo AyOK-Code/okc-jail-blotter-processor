@@ -1,0 +1,1518 @@
+{
+  "rows": [
+    {
+      "dob": "Ntle4BS2c58ZtCog3Efx41KsW+vh0rt4CcwWdaJZAks=",
+      "sex": "M",
+      "lastName": "GTxiFPQG0Xkb2/+ivheY80fbTjpH3u++1XCGcsprsyw=",
+      "firstName": "skJUBU/UE6JPGFks3pKsOeA71YsRhJD3x1tYXxi3/hg=",
+      "race": "B",
+      "bookingNumber": "B-0017921",
+      "bookingDate": "2020-04-23 18:03:36",
+      "inmateNumber": "IN-0017740",
+      "transient": false,
+      "zip": "73111",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "10000.00",
+          "code": "21-1283.A",
+          "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
+        },
+        {
+          "type": "SS",
+          "bond": "30000.00",
+          "code": "21-1287",
+          "charge": "USING OFFENSIVE WEAPON IN FELONY F"
+        },
+        {
+          "type": "SS",
+          "bond": "10000.00",
+          "code": "63-2.401.A",
+          "charge": "TRANSPORT/POSSESS W/INTENT TO MANUF/DIST/DISP CDS F"
+        },
+        {
+          "type": "SS",
+          "bond": "1000.00",
+          "code": "47-6.303.B",
+          "charge": "DRIVING WHILE SUSPENDED/REVOKED/CANCELLED/DENIE D M"
+        }
+      ]
+    },
+    {
+      "dob": "HqIisq7QYPsXOSuRXkpnQyicq/zL9930pgIYtiKv3oo=",
+      "sex": "F",
+      "lastName": "eMKdyKmHQXN6TwtWzNAv+sJ4HYQwKsXEFnOnF7o+BGY=",
+      "firstName": "kRnX/9hFRW6Vx8ew8btPyzVWYxcKCoucHmov/yo/MTE=",
+      "race": "B",
+      "bookingNumber": "B-0017904",
+      "bookingDate": "2020-04-23 02:56:42",
+      "releaseDate": "2020-04-24 02:41:23",
+      "inmateNumber": "IN-0017721",
+      "transient": false,
+      "zip": "73111",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "21-1283.A",
+          "dispo": "PB",
+          "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
+        },
+        {
+          "type": "TR",
+          "code": "DR3",
+          "dispo": "T/C OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "17504802X B"
+        },
+        {
+          "type": "TR",
+          "bond": "387.00",
+          "code": "SPA",
+          "dispo": "T/C OR",
+          "charge": "SPEEDING 1-10 MPH OVER SPEED LIMIT",
+          "warrantNumber": "185755301 B"
+        },
+        {
+          "type": "TR",
+          "bond": "398.00",
+          "code": "FS2",
+          "dispo": "T/C OR",
+          "charge": "FAILURE TO SHOW PROOF OF INSURANCE",
+          "warrantNumber": "185755310 B"
+        },
+        {
+          "type": "TR",
+          "bond": "248.00",
+          "code": "TD1",
+          "dispo": "T/C OR",
+          "charge": "ILLEGAL TAG DISPLAY",
+          "warrantNumber": "18575532X B"
+        }
+      ]
+    },
+    {
+      "dob": "W3hdVwVpAW0xVbdiLlcAucP7ycgDloGn+1H3K02CGeQ=",
+      "sex": "M",
+      "lastName": "6eZpTgA1EUlO1SmwXVrh7jYZ8CEHgUGmCWFEPVSotF0=",
+      "firstName": "D82oiAE1vl3+wAx38+peQzDErA8Ps79kbFd1LDmyWz4=",
+      "race": "B",
+      "bookingNumber": "B-0017930",
+      "bookingDate": "2020-04-23 21:51:00",
+      "inmateNumber": "IN-0017749",
+      "transient": false,
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "TR",
+          "bond": "182.00",
+          "code": "DR8",
+          "dispo": "T/C OR",
+          "charge": "NO STATE DRIVER LICENSE IN POSSESSION",
+          "citationNumber": "18602207X"
+        },
+        {
+          "type": "TR",
+          "code": "TD1",
+          "dispo": "T/C OR",
+          "charge": "ILLEGAL TAG DISPLAY",
+          "warrantNumber": "173900299 B"
+        },
+        {
+          "type": "TR",
+          "code": "DT2",
+          "dispo": "T/C OR",
+          "charge": "NO STATE DRIVER LICENSE",
+          "warrantNumber": "173900308 B"
+        },
+        {
+          "type": "CR",
+          "code": "FTC",
+          "dispo": "T/C OR",
+          "charge": "FAILURE TO CONFINE DOG",
+          "warrantNumber": "185077903 B"
+        },
+        {
+          "type": "TR",
+          "bond": "398.00",
+          "code": "RW7",
+          "dispo": "T/C OR",
+          "charge": "FAILURE TO YIELD RIGHT-OF-WAY WHILE TURNING LEFT",
+          "warrantNumber": "167936684 B"
+        },
+        {
+          "type": "TR",
+          "bond": "398.00",
+          "code": "DT2",
+          "dispo": "T/C OR",
+          "charge": "NO STATE DRIVER LICENSE",
+          "warrantNumber": "167936693 B"
+        },
+        {
+          "type": "TR",
+          "bond": "161.00",
+          "code": "SPA",
+          "dispo": "T/C OR",
+          "charge": "SPEEDING 1-10 MPH OVER SPEED LIMIT",
+          "citationNumber": "186022089"
+        },
+        {
+          "type": "SS",
+          "bond": "2000.00",
+          "code": "21-1289.13",
+          "dispo": "PB",
+          "charge": "TRANSPORTING LOADED FIREARM IN MOTOR VEH M"
+        },
+        {
+          "type": "SS",
+          "code": "21-1713",
+          "dispo": "PB",
+          "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
+        },
+        {
+          "type": "SS",
+          "bond": "2000.00",
+          "code": "22-1141.13",
+          "dispo": "PB",
+          "charge": "FUGITIVE FROM JUSTICE M",
+          "warrantNumber": "CM-2018-1967"
+        }
+      ]
+    },
+    {
+      "dob": "/y1NOelHO5I3j+DcZzL74mwUHoleKKo6Ot+cxXQ46cQ=",
+      "sex": "M",
+      "lastName": "1VGRZnZS6VMHj4tlZcEaa8IlV8HhO7Wez+8va1KHSVc=",
+      "firstName": "y/2zqd0aNDLhTDdRsCdePZgCv3HU/V+R/aqnaRoWzrM=",
+      "race": "W",
+      "bookingNumber": "B-0017923",
+      "bookingDate": "2020-04-23 19:27:51",
+      "releaseDate": "2020-04-24 02:42:50",
+      "inmateNumber": "IN-0017741",
+      "transient": true,
+      "zip": "73109",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "XX2",
+          "dispo": "JD OR",
+          "charge": "LARCENY OF MERCHANDISE",
+          "citationNumber": "186021162"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "TP1",
+          "dispo": "JD OR",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "citationNumber": "186021171"
+        }
+      ]
+    },
+    {
+      "dob": "Ae3a6MgbBZbcL4s2ZFVeNWP1/GASY7l2b+xiql+H/ps=",
+      "sex": "F",
+      "lastName": "oZnQOj5FbGAHnbcb80d33ZUlcvKCGZhfi+MOmpzvDAc=",
+      "firstName": "JPAaiYanVQ9ERAIdtZ7t9jn7wQGrqdnuiY6ikL8wS3Q=",
+      "race": "W",
+      "bookingNumber": "B-0017932",
+      "bookingDate": "2020-04-23 21:12:33",
+      "inmateNumber": "IN-0017748",
+      "transient": false,
+      "zip": "73105",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-644.D.1",
+          "charge": "DOMESTIC ASSAULT AND BATTERY WITH DANGEROUS WEAPON F"
+        }
+      ]
+    },
+    {
+      "dob": "Q5k001gxE1nK56EgUsoq8xihzpYZ7GR8RABUP+OsW4k=",
+      "sex": "M",
+      "lastName": "/wciFd+//0bxeZnjxpRmCRjU5EhVeTXlu0BSXacX5Ko=",
+      "firstName": "hEfkqwqjQIUWwqkRvLMgiW0+fN9E5kvmqeL3eJPb9cA=",
+      "race": "W",
+      "bookingNumber": "B-0017934",
+      "bookingDate": "2020-04-23 22:19:19",
+      "releaseDate": "2020-04-24 03:13:19",
+      "inmateNumber": "IN-0017751",
+      "transient": true,
+      "zip": "73112",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PD1",
+          "dispo": "T/C OR",
+          "charge": "PUBLIC DRUNKENNESS",
+          "citationNumber": "185472776"
+        }
+      ]
+    },
+    {
+      "dob": "kQjC2q5lt4nXu2LWRlmGqBTpgtX9aVGVaA9dYmf5nkA=",
+      "sex": "M",
+      "lastName": "Bn2PqUwQuMAO+eKgg9VGHG4NkjsjTDtfqwEGjBbBgUQ=",
+      "firstName": "OQTsESbso9ZH/BgcVDJDPrfUvKaaFzOjpajE952DayY=",
+      "race": "W",
+      "bookingNumber": "B-0017924",
+      "bookingDate": "2020-04-23 20:12:51",
+      "inmateNumber": "IN-0017743",
+      "transient": false,
+      "zip": "73159",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "63-2.401.A",
+          "charge": "TRANSPORT/POSSESS W/INTENT TO MANUF/DIST/DISP CDS F"
+        },
+        {
+          "type": "TR",
+          "bond": "172.00",
+          "code": "FS1",
+          "charge": "FAILURE TO SIGNAL INTENTION TO TURN",
+          "citationNumber": "185248100"
+        },
+        {
+          "type": "SS",
+          "bond": "500.00",
+          "code": "63-2.405.B",
+          "charge": "POSSESS DRUG PARAPHERNALIA"
+        },
+        {
+          "type": "SS",
+          "bond": "25000.00",
+          "code": "63-2.415",
+          "charge": "TRAFFICKING IN ILLEGAL DRUGS/ CDS F"
+        }
+      ]
+    },
+    {
+      "dob": "1Lltb5M1NApK8s5NAJZeeWmRm6qB+IW72YdD6RBaYPk=",
+      "sex": "M",
+      "lastName": "3IujREUzySLvGVkvNKnS4/A5adtOyIXfJtfpO9JTGYI=",
+      "firstName": "l9f0Rf/yBe6qdtASnYidY8GkcKBXguDw6k3CKNBecTk=",
+      "race": "B",
+      "bookingNumber": "B-0017917",
+      "bookingDate": "2020-04-23 15:18:57",
+      "releaseDate": "2020-04-24 02:42:32",
+      "inmateNumber": "IN-0017737",
+      "transient": true,
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "DP1",
+          "dispo": "JD OR",
+          "charge": "DESTROYING PRIVATE/PUBLIC PROPERTY",
+          "citationNumber": "185134571"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "DP1",
+          "dispo": "JD OR",
+          "charge": "DESTROYING PRIVATE/PUBLIC PROPERTY",
+          "citationNumber": "186250027"
+        },
+        {
+          "type": "CR",
+          "code": "TP1",
+          "dispo": "JD OR",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "warrantNumber": "16648407X B"
+        },
+        {
+          "type": "TR",
+          "code": "FT2",
+          "dispo": "JD OR",
+          "charge": "FAILURE TO APPEAR IN COMPLIANCE WITH TRAFFIC CITATION",
+          "warrantNumber": "F27514513 B"
+        },
+        {
+          "type": "TR",
+          "code": "SPC",
+          "dispo": "JD OR",
+          "charge": "SPEEDING 15-19 MPH OVER SPEED LIMIT",
+          "warrantNumber": "127514522 B"
+        },
+        {
+          "type": "TR",
+          "code": "DR3",
+          "dispo": "JD OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "127514513 B"
+        },
+        {
+          "type": "JD",
+          "code": "DP1",
+          "dispo": "JD OR",
+          "charge": "DESTROYING PRIVATE/PUBLIC PROPERTY",
+          "warrantNumber": "127356580 B"
+        },
+        {
+          "type": "CR",
+          "code": "TP1",
+          "dispo": "JD OR",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "warrantNumber": "166533735 B"
+        }
+      ]
+    },
+    {
+      "dob": "LbzAjXH0ScHK3vv0nuukJ9eJ6GDHSb1smLiVEmPHRis=",
+      "sex": "F",
+      "lastName": "IyhflSxEsoqIyHKfk/xG0WDZ/vHklaK/xQQONs6F/0w=",
+      "firstName": "LgiyKeySN7ydMWqcgUwqNSoVeqEt6Vv5fq8p+nKOdcs=",
+      "race": "W",
+      "bookingNumber": "B-0017926",
+      "bookingDate": "2020-04-23 20:18:08",
+      "inmateNumber": "IN-0017744",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "50000.00",
+          "code": "21-1123",
+          "charge": "LEWD/INDECENT PROPOSALS/ACTS TO CHILD UNDER 16 F"
+        }
+      ]
+    },
+    {
+      "dob": "SdeDI2IrtfIOjxZKGlUBvFLba+jsIr92MmIjQqrRejU=",
+      "sex": "M",
+      "lastName": "V52OG8WN2/FIEjpVbPlB0Vt1UZS31Ki3zTDDQUBsjbY=",
+      "firstName": "HfAiHGXgGK4BXJbLLrAWDEeu70EDqbDenTlfxDOCjpE=",
+      "race": "W",
+      "bookingNumber": "B-0017915",
+      "bookingDate": "2020-04-23 14:06:17",
+      "inmateNumber": "IN-0017735",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "15000.00",
+          "code": "21-645",
+          "charge": "ASSAULT,BATTERY,OR ASSAULT & BATTERY W/DANG WEAPON F"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "AB2",
+          "charge": "ASSAULT AND BATTERY",
+          "citationNumber": "185107686"
+        }
+      ]
+    },
+    {
+      "dob": "uF40i3p9V9xVQDAPH65ipSitP3pYU6bgW5JrciZ4/NM=",
+      "sex": "M",
+      "lastName": "597ilSH9XxDclLl5iMT1BEzISfJSVwgXdpjrtgL5szw=",
+      "firstName": "8cIHaLYTkvD/F4WrGiX6HXbpnRRuCIZGT00GgPUNrnQ=",
+      "race": "W",
+      "bookingNumber": "B-0017925",
+      "bookingDate": "2020-04-23 19:36:31",
+      "inmateNumber": "IN-0017742",
+      "transient": false,
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "IP2",
+          "dispo": "JD OR",
+          "charge": "INTERFERE,ASSAULT,OBSTRUCT PRKG OFFR",
+          "citationNumber": "185868592"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PD1",
+          "dispo": "JD OR",
+          "charge": "PUBLIC DRUNKENNESS",
+          "citationNumber": "185868601"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "AB2",
+          "dispo": "JD OR",
+          "charge": "ASSAULT AND BATTERY",
+          "warrantNumber": "14214666XA"
+        }
+      ]
+    },
+    {
+      "dob": "lqrZHE/cnxEnhllZVhuyUJeGNhPSCSNpd/Lk91Euxe8=",
+      "sex": "M",
+      "lastName": "RScD7q8j3ht4Ouqs09T9DAg6kXvyRcKFw5VubttHOSY=",
+      "firstName": "EdX0/CEQu7wHzZbDVY+MdY3L86TVUVv4HwLjRblZz/E=",
+      "race": "W",
+      "bookingNumber": "B-0017931",
+      "bookingDate": "2020-04-23 22:08:29",
+      "inmateNumber": "IN-0017750",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "TR",
+          "bond": "307.00",
+          "code": "DR3",
+          "dispo": "T/C OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "citationNumber": "186241052"
+        },
+        {
+          "type": "TR",
+          "bond": "45.00",
+          "code": "FS2",
+          "dispo": "T/C OR",
+          "charge": "FAILURE TO SHOW PROOF OF INSURANCE",
+          "citationNumber": "186241043"
+        },
+        {
+          "type": "TR",
+          "bond": "172.00",
+          "code": "FS1",
+          "dispo": "T/C OR",
+          "charge": "FAILURE TO SIGNAL INTENTION TO TURN",
+          "citationNumber": "186241070"
+        },
+        {
+          "type": "TR",
+          "bond": "20.00",
+          "code": "SB7",
+          "dispo": "T/C OR",
+          "charge": "SEAT BELT VIOLATION",
+          "citationNumber": "186241061"
+        }
+      ]
+    },
+    {
+      "dob": "6wls0H/bNOKfYw54A9TGXW1C/odQymIjf6gDbt+2Fbw=",
+      "sex": "M",
+      "lastName": "wfSteqGOEhgFg1khVCdALUyDCN8jqPrDUdEBHMb7HGI=",
+      "firstName": "4/iYQctWMLsV3i5GbtDYRXMmjREmfuHyIKB3eI8lOL4=",
+      "race": "B",
+      "bookingNumber": "B-0017908",
+      "bookingDate": "2020-04-23 05:21:14",
+      "releaseDate": "2020-04-23 13:32:56",
+      "inmateNumber": "IN-0017728",
+      "transient": false,
+      "zip": "73132",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "47-4.102",
+          "dispo": "PB",
+          "charge": "UNAUTHORIZED USE OF A VEHICLE F"
+        },
+        {
+          "type": "SS",
+          "bond": "1000.00",
+          "code": "47-6.303.A",
+          "dispo": "PB",
+          "charge": "NO SDL M"
+        },
+        {
+          "type": "TR",
+          "bond": "182.00",
+          "code": "DT2",
+          "dispo": "PB",
+          "charge": "NO STATE DRIVER LICENSE",
+          "citationNumber": "186256030"
+        }
+      ]
+    },
+    {
+      "dob": "7/EettZtJ+dKeTRQxkVTFoOfdvyq8rXJ13Vmt3edubk=",
+      "sex": "M",
+      "lastName": "wfSteqGOEhgFg1khVCdALUyDCN8jqPrDUdEBHMb7HGI=",
+      "firstName": "x/zjrVdhffQGUyA0ePXQC3nEs3G2WpW8ppBoGALTl7s=",
+      "race": "B",
+      "bookingNumber": "B-0017891",
+      "bookingDate": "2020-04-23 02:00:01",
+      "releaseDate": "2020-04-23 03:26:36",
+      "inmateNumber": "IN-0017720",
+      "transient": false,
+      "zip": "73112",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "3000.00",
+          "code": "22-1141.13",
+          "dispo": "PB",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF20001285"
+        },
+        {
+          "type": "SS",
+          "bond": "3000.00",
+          "code": "22-1141.13",
+          "dispo": "PB",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF20001480"
+        },
+        {
+          "type": "TR",
+          "bond": "162.00",
+          "code": "TD1",
+          "dispo": "T/C OR",
+          "charge": "ILLEGAL TAG DISPLAY",
+          "citationNumber": "190449864"
+        },
+        {
+          "type": "TR",
+          "bond": "162.00",
+          "code": "DE9",
+          "dispo": "T/C OR",
+          "charge": "OTHER EQUIPMENT VIOLATION",
+          "citationNumber": "190449873"
+        },
+        {
+          "type": "TR",
+          "bond": "172.00",
+          "code": "TT1",
+          "dispo": "T/C OR",
+          "charge": "CHANGING LANES IMPROPERLY",
+          "citationNumber": "190449882"
+        }
+      ]
+    },
+    {
+      "dob": "0/89QEfLKiv0cHL+I7OlaEhMME3FBM3eXzHJwSj6jIk=",
+      "sex": "M",
+      "lastName": "1ZrCe8zkvz/hPDnmMiSMaF4EtYlL54t6HiD39Wiofno=",
+      "firstName": "nlPvvKn5ZXVdEszNdY2bMkgfPg356jitSc7isYJ/z/M=",
+      "race": "W",
+      "bookingNumber": "B-0017916",
+      "bookingDate": "2020-04-23 14:04:10",
+      "inmateNumber": "IN-0017734",
+      "transient": false,
+      "zip": "73109",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-644.J",
+          "charge": "DOMESTIC A&B BY STRANGULATION F"
+        }
+      ]
+    },
+    {
+      "dob": "ga9+oYv5X/UPIDtzpXiqO5GQZWqtkXberjNrqmEtcws=",
+      "sex": "M",
+      "lastName": "1ZrCe8zkvz/hPDnmMiSMaF4EtYlL54t6HiD39Wiofno=",
+      "firstName": "yq2bbpg0/M24B+uhMzWX3aerVt0gsPFt9ih/xUEqsHk=",
+      "race": "B",
+      "bookingNumber": "B-0017903",
+      "bookingDate": "2020-04-23 03:42:10",
+      "inmateNumber": "IN-0017725",
+      "transient": false,
+      "zip": "73121",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "2000.00",
+          "code": "21-1713",
+          "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
+        },
+        {
+          "type": "SS",
+          "bond": "500.00",
+          "code": "21-1761.1A",
+          "charge": "DUMPING TRASH ON PUBLIC/PRIVATE PROPERTY M"
+        }
+      ]
+    },
+    {
+      "dob": "YmakWMcNPkeEdMI9GnoNNBDh7NnviDDudEjFy1oX1cM=",
+      "sex": "M",
+      "lastName": "C4OhqI40Nlx2xktgACwxp9YgsBgBUxDIlfU1Ry/WM2Q=",
+      "firstName": "hTqwjxFqhwkmS644iQIS20GybBXs1Qu/OXJl7IDDI1Y=",
+      "race": "B",
+      "bookingNumber": "B-0017906",
+      "bookingDate": "2020-04-23 03:13:05",
+      "releaseDate": "2020-04-23 15:04:21",
+      "inmateNumber": "IN-0017723",
+      "transient": false,
+      "zip": "76201",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "ES6",
+          "dispo": "JD OR",
+          "charge": "ATTEMPTING TO ELUDE POLICE OFFICER",
+          "citationNumber": "18512634X"
+        },
+        {
+          "type": "TR",
+          "bond": "172.00",
+          "code": "ST1",
+          "dispo": "JD OR",
+          "charge": "FAILURE TO STOP FOR STOP SIGN",
+          "citationNumber": "185126330"
+        }
+      ]
+    },
+    {
+      "dob": "kfIwgGmCNRq7iwd3J8Opz+D5aKOjPxTjxrimDhEgugI=",
+      "sex": "M",
+      "lastName": "nlbUvs8/3qAEfFg5bEa8FE0oJCWqzqeGb/VEB9W+sXQ=",
+      "firstName": "DsusxvR4146Bwaf5x/6WC314QKNynQ6aEPZHtPqubgU=",
+      "race": "W",
+      "bookingNumber": "B-0017911",
+      "bookingDate": "2020-04-23 10:53:28",
+      "inmateNumber": "IN-0017730",
+      "transient": true,
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "63-2.415",
+          "charge": "TRAFFICKING IN ILLEGAL DRUGS/ CDS F"
+        },
+        {
+          "type": "SS",
+          "bond": "10000.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF20000793"
+        },
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF20000968"
+        }
+      ]
+    },
+    {
+      "dob": "TFOjsBfuUcNWYoRNAFakJerM5FznQDfcqhDxZyYqK9U=",
+      "sex": "M",
+      "lastName": "u1RX9SYtDjul+oQ65U0GclMqqYsmpVu9yrBg/unRCag=",
+      "firstName": "GFfxVjwzWBaRtpiM8b5Yu4l0CReFf8kzgU0lQgwizS8=",
+      "race": "W",
+      "bookingNumber": "B-0017941",
+      "bookingDate": "2020-04-23 23:36:11",
+      "inmateNumber": "IN-0017757",
+      "transient": false,
+      "zip": "73149",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "10000.00",
+          "code": "21-1111.1",
+          "charge": "RAPE BY INSTRUMENTATION F"
+        }
+      ]
+    },
+    {
+      "dob": "+vrjcyTMPebrnHJPFUIHBZKEOZIjoRLn9EmNY4f8Rwk=",
+      "sex": "M",
+      "lastName": "S8YnLJ4Xuq8EHcmw7wQ/232swCL29S8tVy8nwpwUTss=",
+      "firstName": "N3ryH1S8g64+UwTSmOrDcxTB9dnL4lVa5udiakEPl+M=",
+      "race": "W",
+      "bookingNumber": "B-0017940",
+      "bookingDate": "2020-04-23 23:46:47",
+      "inmateNumber": "IN-0017759",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-644.C",
+          "charge": "DOMESTIC ASSAULT & BATTERY/ABUSE - AFC F"
+        },
+        {
+          "type": "SS",
+          "bond": "3000.00",
+          "code": "63-2.402.B1",
+          "charge": "POSSESSION OF CDS M"
+        },
+        {
+          "type": "SS",
+          "bond": "1000.00",
+          "code": "63-2.402.B2",
+          "charge": "POSSESS MARIJUANA M"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "AB2",
+          "charge": "ASSAULT AND BATTERY",
+          "citationNumber": "18597906X"
+        },
+        {
+          "type": "CR",
+          "bond": "178.00",
+          "code": "MJ9",
+          "charge": "POSSESSION OF MARIJUANA",
+          "citationNumber": "185780336"
+        }
+      ]
+    },
+    {
+      "dob": "JdiIR8FGe+jbKYLyGTOpFeokVMWScCSlib6Ljl1AjT8=",
+      "sex": "M",
+      "lastName": "Ko5+yYVTUaUOXNEXB6DCZ2pqAzntIKmi25/F9GOs8mI=",
+      "firstName": "UXv75d3XcL5/On5vTEwgtA1ffTO/U2N3MyaoYnEmDQM=",
+      "race": "B",
+      "bookingNumber": "B-0017912",
+      "bookingDate": "2020-04-23 12:34:06",
+      "inmateNumber": "IN-0017732",
+      "transient": true,
+      "zip": "73112",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "500.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE M",
+          "warrantNumber": "CM-2020-168"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "TP1",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "citationNumber": "168737502"
+        }
+      ]
+    },
+    {
+      "dob": "TRh2fvx5SzbaD9hv0N+qgwHpIW3KAwFTJGTL6+hc/lc=",
+      "sex": "M",
+      "lastName": "cThZGC6jpAuH/wi4sxHRCsl2oj3chUOEzsPGzGSBjqw=",
+      "firstName": "+E3aW2GdGHCqUsiB0NiL1yHZ1/LRvezvsEpMo+Tiyis=",
+      "race": "B",
+      "bookingNumber": "B-0017910",
+      "bookingDate": "2020-04-23 10:47:42",
+      "inmateNumber": "IN-0017729",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-1720",
+          "charge": "LARCENY-AUTO AIRCRAFT OR OTHER MOTOR VEH F"
+        }
+      ]
+    },
+    {
+      "dob": "SRmVXvMtCtgariuIw3Ej2iu7BPW4bCfJcPnBWa6z05A=",
+      "sex": "M",
+      "lastName": "HnOo6SzNpTJl6hb7DJKCXAbW0WB3EWgY9eZ34/7lW3o=",
+      "firstName": "H6RScW4HfM/zpCKjI7/JvXTLwwYTkbG3P3kK8gHuKm0=",
+      "race": "B",
+      "bookingNumber": "B-0017920",
+      "bookingDate": "2020-04-23 17:59:39",
+      "inmateNumber": "IN-0017739",
+      "transient": false,
+      "zip": "73120",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "37500.00",
+          "code": "63-2.415",
+          "charge": "TRAFFICKING IN ILLEGAL DRUGS/ CDS F"
+        },
+        {
+          "type": "SS",
+          "bond": "7500.00",
+          "code": "63-2.401.A2",
+          "charge": "CREATE/DISTRIBUTE/TRANSPORT W/INTENT TO DISTRIBUTE COUNTERFEIT CDS"
+        },
+        {
+          "type": "SS",
+          "bond": "7500.00",
+          "code": "21-1283.A",
+          "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
+        },
+        {
+          "type": "SS",
+          "bond": "22500.00",
+          "code": "21-1287",
+          "charge": "USING OFFENSIVE WEAPON IN FELONY F"
+        },
+        {
+          "type": "SS",
+          "code": "21-1713",
+          "charge": "REC/POSS/CONC STOLEN PROPERTY <$1000 VALUE"
+        },
+        {
+          "type": "SS",
+          "code": "57-21",
+          "charge": "CARRYING WEAPON/DRUGS/ALCOHOL INTO JAIL F"
+        }
+      ]
+    },
+    {
+      "dob": "KpOYx+IhPmh99LmWPgtxbZXfsSOuoerW1V2/6u1ZAQs=",
+      "sex": "M",
+      "lastName": "U9wj3mwZuu5VyuGNicSaF0rAFYLWZ0ET+uGtKwNZhbc=",
+      "firstName": "Nr1QYzoVrhla+dMraZfFflGlufE5mnLZLHoN9sJh9IQ=",
+      "race": "W",
+      "bookingNumber": "B-0017909",
+      "bookingDate": "2020-04-23 05:17:42",
+      "releaseDate": "2020-04-23 13:18:29",
+      "inmateNumber": "IN-0017727",
+      "transient": false,
+      "zip": "73112",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "3000.00",
+          "code": "63-2.402.B1",
+          "dispo": "FS",
+          "charge": "POSSESSION OF CDS M"
+        },
+        {
+          "type": "SS",
+          "bond": "3000.00",
+          "code": "63-2.402.B1",
+          "dispo": "FS",
+          "charge": "POSSESSION OF CDS M"
+        },
+        {
+          "type": "JD",
+          "bond": "232.00",
+          "code": "FR6",
+          "charge": "FAILURE TO MAINTAIN EXTERIOR STRUCTURE,SAME DAY, SEPARATE BUILDINGS",
+          "warrantNumber": "143648994 A"
+        }
+      ]
+    },
+    {
+      "dob": "eOm4CiTUFomPJLhubSfJ0a5fIwAGA18SjpxFkGktkjQ=",
+      "sex": "F",
+      "lastName": "hIC2BbKRz0pHCsR1yu/L8WtMPAOaTAub2OZVD4iZ92M=",
+      "firstName": "aj1QL68By79bVcVlz/GBUHOHDhsildGkfLYREg7DpiQ=",
+      "race": "B",
+      "bookingNumber": "B-0017927",
+      "bookingDate": "2020-04-23 20:34:06",
+      "inmateNumber": "IN-0017747",
+      "transient": false,
+      "zip": "73111",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "XX2",
+          "dispo": "JD OR",
+          "charge": "LARCENY OF MERCHANDISE",
+          "citationNumber": "185806763"
+        }
+      ]
+    },
+    {
+      "dob": "GWEWZdPpstN71M6jOkyl9O04mw/2HKKExDbrAO0UXDc=",
+      "sex": "M",
+      "lastName": "+m0SlhR8o/++S97HkJfvEyrnZKmJgoCiHDcc9k5aL88=",
+      "firstName": "VQNxDfpNX2TjDffbtd0se8JRVrlLQOZPZxuQXwCQrXo=",
+      "race": "B",
+      "bookingNumber": "B-0017936",
+      "bookingDate": "2020-04-23 22:42:40",
+      "inmateNumber": "IN-0017754",
+      "transient": false,
+      "zip": "73127",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-701.7",
+          "charge": "MURDER FIRST DEGREE F",
+          "warrantNumber": "MI-2020-00398"
+        },
+        {
+          "type": "TR",
+          "code": "FS2",
+          "charge": "FAILURE TO SHOW PROOF OF INSURANCE",
+          "warrantNumber": "173655713 B"
+        },
+        {
+          "type": "TR",
+          "code": "DR3",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "173655722 B"
+        }
+      ]
+    },
+    {
+      "dob": "2LwfjFFSRPcwG5PPOLNe8k/6zAXEmiTWDHasmEP7ebo=",
+      "sex": "M",
+      "lastName": "2PaohZWmbl4ryoAsoGoLL0/8uBn4QxHIUPXtl/HfkJY=",
+      "firstName": "I/5fV/luyDBkWo7UHkWM6vHZUwiBYGciCrDMyH/c/CM=",
+      "race": "U",
+      "bookingNumber": "B-0017929",
+      "bookingDate": "2020-04-23 20:28:03",
+      "inmateNumber": "IN-0017746",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "21-644.D.2",
+          "charge": "DOMESTIC ASSAULT AND BATTERY WITH A DEADLY WEAPON F"
+        },
+        {
+          "type": "SS",
+          "code": "21-644.G",
+          "charge": "DOMESTIC ASSAULT AND BATTERY IN PRESENCE OF CHILD M"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "AB2",
+          "charge": "ASSAULT AND BATTERY",
+          "citationNumber": "186085815"
+        },
+        {
+          "type": "JD",
+          "bond": "500.00",
+          "code": "HR2",
+          "charge": "LEAVING SCENE OF ACCIDENT WITHOUT REQUIRED NOTICE",
+          "citationNumber": "186085824"
+        }
+      ]
+    },
+    {
+      "dob": "lWf4qYSzajScqBgS36S9M7NEKlMr75u0XiRRCylUSWk=",
+      "sex": "M",
+      "lastName": "GiuKJPepzmNb39lef8tOvbQm0RmJMzHWm1JMyCaJPR4=",
+      "firstName": "CNoq3nvOdmNbHvxMAY0mQCs81cOwzPTWx7PeO1evxLE=",
+      "race": "W",
+      "bookingNumber": "B-0017913",
+      "bookingDate": "2020-04-23 12:27:46",
+      "releaseDate": "2020-04-23 19:13:20",
+      "inmateNumber": "IN-0017731",
+      "transient": false,
+      "zip": "73109",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "10000.00",
+          "code": "57-587.A",
+          "dispo": "FS",
+          "charge": "FAILURE TO COMPLY WITH SEX OFFENDER REGISTRATION F",
+          "warrantNumber": "MI-2020-394"
+        }
+      ]
+    },
+    {
+      "lastName": "L3ZHs9f8kSHJ01+iftHNTOwvkrsk+7waqafOh30/CCU=",
+      "firstName": "0RfSElu7Xw4e19WOCFyifPUZzgYDbrLz67zMdhdHWyc=",
+      "race": "W",
+      "bookingNumber": "B-0017939",
+      "bookingDate": "2020-04-23 23:41:06",
+      "inmateNumber": "IN-0017758",
+      "transient": false,
+      "zip": "73130",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "DU1",
+          "dispo": "JD OR",
+          "charge": "DRIVING UNDER THE INFLUENCE OF ALCOHOL",
+          "citationNumber": "186262026"
+        },
+        {
+          "type": "TR",
+          "bond": "202.00",
+          "code": "SPD",
+          "dispo": "JD OR",
+          "charge": "SPEEDING 20-25 MPH OVER SPEED LIMIT",
+          "citationNumber": "185617399"
+        }
+      ],
+      "dob": "d08TME/M61tnsrE0eO5QrPPPw+iJY45dRAL82EgQ4YU="
+    },
+    {
+      "dob": "HUe3Tsav2s0PSHI0BdYvm/+UHD6/1N6ZUNstLto8shA=",
+      "sex": "M",
+      "lastName": "cb/KS+E45hPLPAQWy63KxbkQR7QSppAtgi24Ofn3O6k=",
+      "firstName": "Js32F2sjiDHa623N9LagEqRNv4YwlkRLWgq+hBTJ/zM=",
+      "race": "W",
+      "bookingNumber": "B-0017905",
+      "bookingDate": "2020-04-23 03:00:07",
+      "releaseDate": "2020-04-23 15:03:03",
+      "inmateNumber": "IN-0017722",
+      "transient": true,
+      "zip": "73109",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "TP1",
+          "dispo": "T/C OR",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "citationNumber": "18601910X"
+        }
+      ]
+    },
+    {
+      "dob": "YR5eXDj4s7sifBsLZV7PstH1wFbxnhvzTaOZQ46MK+w=",
+      "sex": "M",
+      "lastName": "V5gNXJgLWlwCMStDvGb+SdO7HZlUg/iplCIodQbrNc0=",
+      "firstName": "1DtQFDskzp5nocu0ntU7h/edSQZ3SovLAEV8HNj8Xc4=",
+      "race": "W",
+      "bookingNumber": "B-0017914",
+      "bookingDate": "2020-04-23 14:01:38",
+      "inmateNumber": "IN-0017733",
+      "transient": false,
+      "zip": "73165",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "21-1378.A",
+          "charge": "PLAN/ATTEMPT/CONSPIRE TO PERFORM ACT OF VIOLENCE F"
+        },
+        {
+          "type": "SS",
+          "code": "21-644.G",
+          "charge": "DOMESTIC ASSAULT AND BATTERY IN PRESENCE OF CHILD - AFC F"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "AB2",
+          "charge": "ASSAULT AND BATTERY",
+          "citationNumber": "185770775"
+        },
+        {
+          "type": "SS",
+          "bond": "500.00",
+          "code": "21-1760.A1",
+          "charge": "MALICIOUS INJURY/DESTRUCTION OF PROPERTY M"
+        },
+        {
+          "type": "TR",
+          "bond": "182.00",
+          "code": "DT2",
+          "charge": "NO STATE DRIVER LICENSE",
+          "citationNumber": "185770784"
+        }
+      ]
+    },
+    {
+      "dob": "Y5XtBqWh6bB/4WTiyYAJ0gvWCReBRj5q1xmxK5IqcVI=",
+      "sex": "M",
+      "lastName": "tCmgfuaQ+erGxaa96LVNUIm6lWiRrt5QJx6iY+pSo3Y=",
+      "firstName": "Qn28qJn3FtQ4k+Khon+yME4WSchL53qQBmDg12xuoX4=",
+      "race": "W",
+      "bookingNumber": "B-0017937",
+      "bookingDate": "2020-04-23 22:23:29",
+      "inmateNumber": "IN-0017752",
+      "transient": false,
+      "zip": "73034",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "1000.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE M",
+          "warrantNumber": "CM19001979"
+        },
+        {
+          "type": "TR",
+          "bond": "172.00",
+          "code": "ST1",
+          "charge": "FAILURE TO STOP FOR STOP SIGN",
+          "citationNumber": "186194055"
+        },
+        {
+          "type": "TR",
+          "code": "FD1",
+          "charge": "FAILURE TO DEVOTE FULL TIME AND ATTENTION",
+          "warrantNumber": "143885732B"
+        },
+        {
+          "type": "TR",
+          "code": "DR3",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "143885741B"
+        }
+      ]
+    },
+    {
+      "dob": "jFcqesgZ8h/b2s+dGeCw437IJX/X2vHargy4YTYhHzQ=",
+      "sex": "F",
+      "lastName": "E+QxuzEtfW3vr1bBeHOL3nxHP/40HMK6JrwpanwUd3I=",
+      "firstName": "Rf7qUoqUnJIDjRwKZRgK7o2PUJ2X2VlERe2/DC2Lh8w=",
+      "race": "W",
+      "bookingNumber": "B-0017933",
+      "bookingDate": "2020-04-23 22:37:11",
+      "inmateNumber": "IN-0017753",
+      "transient": false,
+      "zip": "73170",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "XX2",
+          "charge": "LARCENY OF MERCHANDISE",
+          "citationNumber": "185345048"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "TP1",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "citationNumber": "185345057"
+        },
+        {
+          "type": "SS",
+          "bond": "20000.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF-17-4445"
+        },
+        {
+          "type": "JD",
+          "bond": "1500.00",
+          "code": "HP1",
+          "charge": "HYPODERMIC SYRINGE VIOLATION",
+          "warrantNumber": "185677266B"
+        },
+        {
+          "type": "CR",
+          "bond": "400.00",
+          "code": "PD1",
+          "charge": "PUBLIC DRUNKENNESS",
+          "warrantNumber": "185677257B"
+        },
+        {
+          "type": "CR",
+          "bond": "400.00",
+          "code": "DH9",
+          "charge": "DRUG PARAPHERNALIA VIOLATION",
+          "warrantNumber": "185677248B"
+        }
+      ]
+    },
+    {
+      "dob": "02lp0u3S6VaGP0xOiPFUkm9qSm84O4oRz2JP8dHzQbo=",
+      "sex": "M",
+      "lastName": "pqE8EUQiEYU+7JEB52Rmr9HFs9fF6HxTfO8o/zN7V/U=",
+      "firstName": "EBoGZEoQg41+aC2Dpb7sTMYwRyFZ8YiVQxOPMDpAr6o=",
+      "race": "B",
+      "bookingNumber": "B-0017907",
+      "bookingDate": "2020-04-23 03:20:30",
+      "releaseDate": "2020-04-23 15:03:33",
+      "inmateNumber": "IN-0017724",
+      "transient": false,
+      "zip": "73129",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PS3",
+          "dispo": "JD OR",
+          "charge": "INTERFERING WITH OFFICIAL PROCESS - GIVING FALSE INFORMATION",
+          "citationNumber": "186059837"
+        },
+        {
+          "type": "TR",
+          "bond": "162.00",
+          "code": "DE1",
+          "dispo": "JD OR",
+          "charge": "ILLEGAL OR DEFECTIVE LIGHTS",
+          "citationNumber": "186059828"
+        },
+        {
+          "type": "TR",
+          "bond": "162.00",
+          "code": "TD1",
+          "dispo": "JD OR",
+          "charge": "ILLEGAL TAG DISPLAY",
+          "citationNumber": "186059819"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "IP1",
+          "dispo": "JD OR",
+          "charge": "I W O P.DISOBEY-OBSTRUCT OFFR",
+          "citationNumber": "18605980X"
+        },
+        {
+          "type": "CR",
+          "bond": "178.00",
+          "code": "MJ9",
+          "dispo": "JD OR",
+          "charge": "POSSESSION OF MARIJUANA",
+          "citationNumber": "186059846"
+        },
+        {
+          "type": "TR",
+          "bond": "307.00",
+          "code": "DR3",
+          "dispo": "JD OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "citationNumber": "186059855"
+        },
+        {
+          "type": "TR",
+          "bond": "398.00",
+          "code": "SPC",
+          "dispo": "JD OR",
+          "charge": "SPEEDING 15-19 MPH OVER SPEED LIMIT",
+          "warrantNumber": "174198260 B"
+        },
+        {
+          "type": "TR",
+          "bond": "648.00",
+          "code": "DR3",
+          "dispo": "JD OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "17419827X B"
+        },
+        {
+          "type": "TR",
+          "bond": "398.00",
+          "code": "FS2",
+          "dispo": "JD OR",
+          "charge": "FAILURE TO SHOW PROOF OF INSURANCE",
+          "warrantNumber": "174198289 B"
+        },
+        {
+          "type": "TR",
+          "code": "DR3",
+          "dispo": "JD OR",
+          "charge": "DRIVING UNDER SUSPENSION",
+          "warrantNumber": "17386442X B"
+        }
+      ]
+    },
+    {
+      "dob": "quRzFmLCVUeYE1T4b1frsmRPYOeyG0jHqv6t6llX8Ps=",
+      "sex": "M",
+      "lastName": "wN5QdwxGGt9cuWEiPR+H9enSckYT+dOzozTz/ldboIQ=",
+      "firstName": "VGgurvMGUtzW8t94DsIcBoXCsIa36Z9jAxnONM4IoFM=",
+      "race": "W",
+      "bookingNumber": "B-0017928",
+      "bookingDate": "2020-04-23 20:23:54",
+      "inmateNumber": "IN-0017745",
+      "transient": false,
+      "zip": "73127",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE F",
+          "warrantNumber": "CF-19-3122"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PS3",
+          "charge": "INTERFERING WITH OFFICIAL PROCESS - GIVING FALSE INFORMATION",
+          "citationNumber": "186099381"
+        }
+      ]
+    },
+    {
+      "dob": "2cHc+HgAeXY2iiOnv9MWsxluDwp3BuZC+xEUOGOiuKs=",
+      "sex": "F",
+      "lastName": "T8kr+a+/gi/lJb4F6o+xbLXZDiISMNxVUWakvSmYeOw=",
+      "firstName": "yKzd86kjR8p0tWgtn+qgj5FjoGUJ4mYYfXIGsGOR3c4=",
+      "race": "B",
+      "bookingNumber": "B-0017918",
+      "bookingDate": "2020-04-23 15:14:16",
+      "inmateNumber": "IN-0017736",
+      "transient": false,
+      "zip": "73111",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "21-1283.A",
+          "dispo": "PB",
+          "charge": "POSSESS FIREARM AFTER CONVICTION OF FELONY F"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "DG1",
+          "dispo": "JD OR",
+          "charge": "ILLEGAL DISCHARGE OF GUN",
+          "citationNumber": "186155326"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PS3",
+          "dispo": "JD OR",
+          "charge": "INTERFERING WITH OFFICIAL PROCESS - GIVING FALSE INFORMATION",
+          "citationNumber": "186155344"
+        },
+        {
+          "type": "JD",
+          "bond": "750.00",
+          "code": "DP1",
+          "dispo": "JD OR",
+          "charge": "DESTROYING PRIVATE/PUBLIC PROPERTY",
+          "citationNumber": "173698750"
+        }
+      ]
+    },
+    {
+      "dob": "5iXcWI6oOb4VWyt2IFuycOTvkS+HnwD5I+74YnAejLI=",
+      "sex": "M",
+      "lastName": "AT3GlJ5zu+bLV2UjUvUTIQkk9mRB6AjoUx/dDVcTIhk=",
+      "firstName": "Ask4TcjdIJe44K2ndZch/ZxTLTh55o+LdFEW2yX8BnY=",
+      "race": "B",
+      "bookingNumber": "B-0017922",
+      "bookingDate": "2020-04-23 17:23:01",
+      "releaseDate": "2020-04-24 02:41:04",
+      "inmateNumber": "IN-0017738",
+      "transient": false,
+      "bookingType": "RE-BOOKING",
+      "offenses": [
+        {
+          "type": "CR",
+          "code": "PD1",
+          "dispo": "T/C OR",
+          "charge": "PUBLIC DRUNKENNESS",
+          "warrantNumber": "168779531 B"
+        }
+      ]
+    },
+    {
+      "dob": "PDIcOVL1TAKI8XWUSTxSkB21Nn74a3BXUxyK5Mcorio=",
+      "sex": "M",
+      "lastName": "9KcIHKa5zvv7vWiphQTAtEY+mIN/gbP1+jm5b0qn7ho=",
+      "firstName": "SnTBuZYIWYhGwaNTqDpflCQVx8teLRdIXozKOVjMdh8=",
+      "race": "B",
+      "bookingNumber": "B-0017884",
+      "bookingDate": "2020-04-23 04:25:41",
+      "releaseDate": "2020-04-23 04:25:56",
+      "inmateNumber": "IN-0017726",
+      "transient": false,
+      "zip": "73129",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "500.00",
+          "code": "22-1141.13",
+          "charge": "FUGITIVE FROM JUSTICE M",
+          "warrantNumber": "CM-2020-758"
+        },
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "TP1",
+          "charge": "TRESPASSING ON PRIVATE PROPERTY",
+          "citationNumber": "186065281"
+        }
+      ]
+    },
+    {
+      "dob": "I+dyVeG//SBpoQcCDGnxFCzADUiWhdB5LY5tkgsyzuI=",
+      "sex": "M",
+      "lastName": "sNaTz+hODvR1+QwpJjDigf8HRXqF75OfSe0jSoqpB4s=",
+      "firstName": "gE+diR6TFOcLydudX0eiBLyA1VTY2y2sjDuo9Pl2Avg=",
+      "race": "W",
+      "bookingNumber": "B-0017935",
+      "bookingDate": "2020-04-23 22:50:00",
+      "inmateNumber": "IN-0017755",
+      "transient": false,
+      "zip": "73127",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "SS",
+          "bond": "5000.00",
+          "code": "63-2.401.A",
+          "charge": "DIST OF CONTROLLED SUBSTANCE -INCL POSS W/ INTENT F"
+        },
+        {
+          "type": "TR",
+          "bond": "182.00",
+          "code": "DT2",
+          "charge": "NO STATE DRIVER LICENSE",
+          "citationNumber": "186152888"
+        },
+        {
+          "type": "TR",
+          "bond": "162.00",
+          "code": "DE1",
+          "charge": "ILLEGAL OR DEFECTIVE LIGHTS",
+          "citationNumber": "186152879"
+        },
+        {
+          "type": "CR",
+          "bond": "178.00",
+          "code": "MJ9",
+          "charge": "POSSESSION OF MARIJUANA",
+          "citationNumber": "186152897"
+        }
+      ]
+    },
+    {
+      "dob": "lUAyRDGH/8L9mFpL8Am3wsieIXoifkDnIMQKN1/bhEc=",
+      "sex": "M",
+      "lastName": "WBBy3sTw69XPC2IyHsESQyXrJswQz9tOguCe3uOLr3E=",
+      "firstName": "yIej8zYTFtWODUzCMySc9BzPHaSxKPlYQKRtONbytko=",
+      "race": "B",
+      "bookingNumber": "B-0017938",
+      "bookingDate": "2020-04-23 23:25:08",
+      "inmateNumber": "IN-0017756",
+      "transient": false,
+      "zip": "73119",
+      "bookingType": "INITIAL BOOKING",
+      "offenses": [
+        {
+          "type": "CR",
+          "bond": "167.00",
+          "code": "PD1",
+          "dispo": "T/C OR",
+          "charge": "PUBLIC DRUNKENNESS",
+          "citationNumber": "190648203"
+        }
+      ]
+    }
+  ]
+}

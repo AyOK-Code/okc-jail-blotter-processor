@@ -11,7 +11,7 @@ module.exports = (sequelize, DataTypes) => {
       field: 'person_id'
     },
     sex: {
-      allowNull: false,
+      allowNull: true,
       type: DataTypes.TEXT
     },
     race: {

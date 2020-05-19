@@ -213,7 +213,7 @@ const fixedFields = c.merge([
   m.ignore(take('sexLabel')),
   m.ignore(take('raceLabel')),
   c.maybe(take('dob')),
-  take('sex'),
+  c.maybe(take('sex')),
   take('name'),
   c.maybe(take('race')),
   m.ignore(take('bookingNumberLabel')),
