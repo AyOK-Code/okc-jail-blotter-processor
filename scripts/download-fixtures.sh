@@ -3,6 +3,7 @@
 set -euo pipefail
 
 ALL_IDS=(
+  19012
   17070
   17000
   16884
@@ -66,6 +67,7 @@ ALL_IDS=(
   15872
 )
 ALL_NAMES=(
+  July172020.pdf
   May122020.pdf
   May42020.pdf
   April242020.pdf
@@ -131,7 +133,7 @@ ALL_NAMES=(
 
 OPTION="${1:-}"
 if [ "$OPTION" = "all" ]; then
-  echo "Downloading Jan 1, 2020 - Feb 20, 2020"
+  echo "Downloading all the test cases"
   IDS=( ${ALL_IDS[@]} )
   NAMES=( ${ALL_NAMES[@]} )
 elif [ "$OPTION" = "random" ]; then
@@ -145,8 +147,8 @@ elif [ "$OPTION" = "random" ]; then
   done
   echo "Downloading $N random PDFs"
 else
-  IDS=( "${ALL_IDS[19]}" "${ALL_IDS[34]}" "${ALL_IDS[33]}" "${ALL_IDS[44]}" )
-  NAMES=( "${ALL_NAMES[19]}" "${ALL_NAMES[34]}" "${ALL_NAMES[33]}" "${ALL_NAMES[44]}" )
+  IDS=( "${ALL_IDS[0]}" "${ALL_IDS[20]}" "${ALL_IDS[35]}" "${ALL_IDS[34]}" "${ALL_IDS[45]}" )
+  NAMES=( "${ALL_NAMES[0]}" "${ALL_NAMES[20]}" "${ALL_NAMES[35]}" "${ALL_NAMES[34]}" "${ALL_NAMES[45]}" )
 fi
 
 for i in $(seq 0 "$(( "${#IDS[@]}" - 1 ))"); do

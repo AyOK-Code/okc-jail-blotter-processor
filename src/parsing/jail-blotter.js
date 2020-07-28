@@ -14,7 +14,7 @@ const regexes = {
   printDate: new RegExp('^((?:[1-9]|1(?:[0-2]))/(?:[1-9]|(?:[1-2][0-9])|(?:3[0-1]))/(?:(?:19)|(?:20))[0-9]{2} (?:[1-9]|(?:1[0-2])):[0-5][0-9] (?:A|P)M)$'),
   integer: new RegExp('^([1-9][0-9]*)$'),
   money: new RegExp('^\\$([0-9,]+\\.[0-9]{2})$'),
-  code: new RegExp('^([A-Z0-9 ./()-]+)$'),
+  code: new RegExp('^([A-Z0-9 *./()-]+)$'),
   type: new RegExp('^([A-Z]{2})$'),
   zip: new RegExp('([0-9]{5}(?:\\-[0-9]+)*)$'),
   transient: new RegExp('(transient)', 'i')
