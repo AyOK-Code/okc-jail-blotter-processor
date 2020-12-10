@@ -21,7 +21,7 @@ This project uses [StandardJS](https://standardjs.com/). Please make sure your f
 
 ### Running the tests
 ```sh
-npm run download-fixtures
+# npm run download-fixtures
 npm test
 
 # Optional, to run more extensive tests:

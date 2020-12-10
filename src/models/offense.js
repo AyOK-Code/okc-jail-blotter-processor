@@ -14,7 +14,7 @@ module.exports = (sequelize, DataTypes) => {
       type: DataTypes.DECIMAL(9, 2)
     },
     code: {
-      allowNull: false,
+      allowNull: true,
       type: DataTypes.TEXT
     },
     dispo: {

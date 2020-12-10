@@ -241,9 +241,11 @@ const fixedFields = c.merge([
 const offense = c.log(c.merge([
   take('type'),
   c.maybe(take('bond')),
-  c.map(
-    m.join1('code', take('code')),
-    ({ code }) => ({ code: code.replace(/ /g, '') })
+  c.maybe(
+    c.map(
+      m.join1('code', take('code')),
+      ({ code }) => ({ code: code.replace(/ /g, '') })
+    )
   ),
   c.maybe(take('dispo')),
   m.join1('charge', take('charge')),
