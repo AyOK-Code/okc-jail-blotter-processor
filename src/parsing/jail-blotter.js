@@ -133,7 +133,9 @@ const fields = {
   pageNumber: { vx: startsAt(226), selector: selectors.pattern(regexes.pageNumber) },
   printDate: { vx: endsAt(496), selector: selectors.pattern(regexes.printDate) },
   totalInmatesLabel: { vx: startsAt(37), selector: selectors.text('Total Number of Inmates:') },
-  totalInmates: { vx: startsAt(154), selector: selectors.pattern(regexes.integer) }
+  totalInmates: { vx: startsAt(154), selector: selectors.pattern(regexes.integer) },
+  // Junk
+  junk: { vx: () => true, selector: selectors.text('`') }
 }
 
 const take = (field) => c.log(p.satisfy(({ s, left, center, right }) => {
@@ -193,6 +195,7 @@ const filterTokensGrammar = c.many1('data',
     m.ignore(
       c.many('metadata',
         c.first([
+          m.ignore(take('junk')),
           m.ignore(take('pageNumber')),
           m.ignore(take('printDate')),
           offenseTableHeaders,
