@@ -49,7 +49,7 @@ async function run (file, command) {
 
   const processed = await Promise.all(pdfs.map(async ({ buf, postedOn }) => {
     const { parsed, timings: { extractText, filterTokens, parseBlotter, total } } = await parseJailblotter(buf)
-    console.log(`Parsed ${parsed.rows.length} entries in ${total}ms (${extractText}+${filterTokens}+${parseBlotter})`)
+    console.log(`${postedOn} Parsed ${parsed.rows.length} entries in ${total}ms (${extractText}+${filterTokens}+${parseBlotter})`)
     return { rows: parsed.rows, postedOn }
   }))
 
