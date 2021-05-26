@@ -7,7 +7,7 @@ module.exports = (sequelize, DataTypes) => {
     firstName: {
       allowNull: false,
       type: DataTypes.TEXT,
-      field: 'first_name',
+      field: 'first_name'
     },
     lastName: {
       allowNull: false,
@@ -44,8 +44,9 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
       using: 'BTREE',
       fields: ['first_name', 'last_name', 'dob']
-    },{
-      name: "idx_hash",
+    },
+    {
+      name: 'idx_hash',
       unique: true,
       using: 'BTREE',
       fields: ['hash']

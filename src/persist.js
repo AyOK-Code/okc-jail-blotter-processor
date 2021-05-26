@@ -1,8 +1,24 @@
-const Sequelize = require('sequelize')
+const { Op, Sequelize } = require('sequelize')
 const crypto = require('crypto')
-const { Person, Pdf, Booking, Offense } = require('./models')
+const { Person, Pdf, Booking, Offense, sequelize } = require('./models')
 const env = process.env.NODE_ENV || 'development'
 const config = require('./config/config')[env]
+const moment = require('moment')
+
+const hashPerson = function (propArr) {
+  const hash = crypto.createHash('sha256')
+  hash.update(JSON.stringify(propArr))
+  return hash.digest('base64')
+}
+
+/* Sequelize erroneously adds timezone to DATEONLY on retrieval from MSSQL
+  so we need to add a day to make it right. We can't future-proof this,
+  as the date is already wrong and converted to a string when we get it */
+const fixDateOnly = function (d) {
+  const m = moment.utc(d)
+    m.add(1, 'd')
+    return m.format('YYYY-MM-DD')
+}
 
 exports.filterLinks = async function (links) {
   const sequelize = new Sequelize(config)
@@ -12,19 +28,35 @@ exports.filterLinks = async function (links) {
         postedOn: links.map(({ postedOn }) => postedOn)
       }
     })
-    /* Sequelize erroneously adds timezone to DATEONLY on retrieval from MSSQL
-    so we need to add a day to make it right */
-    const existing = new Set(pdfs.map((x) => {
-      let date = new Date(x.postedOn)
-      date.setDate(date.getDate() + 1)
-      return date.toISOString().split('T')[0]
-    }))
-    console.log(existing)
-    console.log(new Date().getTimezoneOffset())
+    const existing = new Set(pdfs.map((x) => { return fixDateOnly(x.postedOn) }))
     return links.filter(({ postedOn }) => !existing.has(postedOn))
   })
   await sequelize.close()
   return result
+}
+
+exports.rekey = async function () {
+  await sequelize.transaction(async (transaction) => {
+    const people = await Person.findAll({
+      attributes: ['id', 'hash', 'first_name', 'last_name', 'dob']
+    })
+    await Promise.all(people.map(async (row) => {
+      if (row.dob == null) {
+        row.dob = null
+      } else {
+        row.dob = fixDateOnly(row.dob)
+      }
+      row.hash = hashPerson([row.getDataValue('first_name'), row.getDataValue('last_name'), row.dob])
+
+      await Person.update({ hash: row.hash },
+        {
+          where: {
+            id: row.getDataValue('id')
+          },
+          transaction
+        })
+    }))
+  })
 }
 
 exports.save = async function (processed) {
@@ -40,12 +72,11 @@ exports.save = async function (processed) {
         { transaction }
       )
       await Promise.all(rows.map(async (row) => {
-        const hash = crypto.createHash('sha256')
-        hash.update(`${row.first_name} ${row.last_name} ${row.dob}`)
-        row.hash = hash.digest('base64')
-        if (!("dob" in row)) {
+        if (row.dob == null) {
           row.dob = null
         }
+        row.hash = hashPerson([row.firstName, row.lastName, row.dob])
+
         const [person] = await Person.upsert(
           row,
           { transaction, returning: true }
