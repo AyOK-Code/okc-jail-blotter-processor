@@ -22,7 +22,7 @@ gcloud config set run/region us-central1
 
 gcloud auth configure-docker --quiet
 
-URL="us.gcr.io/$GCLOUD_PROJECT/jail-blotter-processor"
+URL="us.gcr.io/$GCLOUD_PROJECT/jail-blotter-processor-azure"
 SHA="$(git rev-list -1 HEAD -- .)"
 docker build . -t "$URL:$SHA"
 docker push "$URL:$SHA"
