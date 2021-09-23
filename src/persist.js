@@ -15,10 +15,12 @@ const hashPerson = function (propArr) {
   so we need to add a day to make it right. We can't future-proof this,
   as the date is already wrong and converted to a string when we get it */
 const fixDateOnly = function (d) {
-  if (env !== 'localprod') { return d }
-  const m = moment.utc(d)
+  const offset = moment().utcOffset()
+  const m = moment(d)
+  if (offset < 0) {
     m.add(1, 'd')
-    return m.format('YYYY-MM-DD')
+  }
+  return m.format('YYYY-MM-DD')
 }
 
 exports.filterLinks = async function (links) {
