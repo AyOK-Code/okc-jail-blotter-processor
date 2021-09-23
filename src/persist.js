@@ -1,4 +1,4 @@
-const { Op, Sequelize } = require('sequelize')
+const { Sequelize } = require('sequelize')
 const crypto = require('crypto')
 const { Person, Pdf, Booking, Offense, sequelize } = require('./models')
 const env = process.env.NODE_ENV || 'development'
@@ -15,6 +15,7 @@ const hashPerson = function (propArr) {
   so we need to add a day to make it right. We can't future-proof this,
   as the date is already wrong and converted to a string when we get it */
 const fixDateOnly = function (d) {
+  if (env !== 'localprod') { return d }
   const m = moment.utc(d)
     m.add(1, 'd')
     return m.format('YYYY-MM-DD')

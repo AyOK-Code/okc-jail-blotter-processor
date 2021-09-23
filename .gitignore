@@ -9,3 +9,4 @@ package-lock.json
 notes.txt
 *.zip
 *.sql
+scripts/runlocal.sh
