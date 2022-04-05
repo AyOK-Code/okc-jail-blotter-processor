@@ -7,7 +7,7 @@ module.exports = {
     dialect: 'mssql',
     dialectOptions: {
       dateFirst: 1,
-      useUTC: false
+      useUTC: true
     }
   },
   localprod: {
