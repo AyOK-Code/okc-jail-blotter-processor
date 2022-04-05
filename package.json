@@ -12,7 +12,7 @@
     "migrate": "cd src && npx sequelize-cli db:migrate",
     "download-fixtures": "scripts/download-fixtures.sh",
     "test": "mocha --delay",
-    "psql": "PGPASSWORD=Password123 psql -h localhost -U postgres"
+    "mssql": "docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd -U sa -P Password@123 -d temp"
   },
   "author": "",
   "license": "ISC",
