@@ -12,23 +12,22 @@
     "migrate": "cd src && npx sequelize-cli db:migrate",
     "download-fixtures": "scripts/download-fixtures.sh",
     "test": "mocha --delay",
-    "psql": "PGPASSWORD=Password123 psql -h localhost -U postgres"
+    "mssql": "docker exec -it sqlserver /opt/mssql-tools/bin/sqlcmd -U sa -P Password@123 -d temp"
   },
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "body-parser": "^1.19.0",
     "bottleneck": "^2.19.5",
     "cheerio": "^1.0.0-rc.3",
     "express": "^4.17.1",
     "moment": "^2.24.0",
     "pdf-parse": "1.1.1",
-    "pg": "^7.0.0",
-    "pg-hstore": "^2.3.3",
     "raygun": "^0.10.2",
-    "sequelize": "5.21.5",
-    "sequelize-cli": "5.5.1"
+    "sequelize": "6.6.0",
+    "sequelize-cli": "5.5.1",
+    "tedious": "^6.0.0"
   },
   "devDependencies": {
     "mocha": "7.0.1"

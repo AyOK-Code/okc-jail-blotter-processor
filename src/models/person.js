@@ -1,5 +1,9 @@
 module.exports = (sequelize, DataTypes) => {
   const Person = sequelize.define('Person', {
+    hash: {
+      allowNull: false,
+      type: DataTypes.TEXT
+    },
     firstName: {
       allowNull: false,
       type: DataTypes.TEXT,
@@ -40,6 +44,12 @@ module.exports = (sequelize, DataTypes) => {
       unique: true,
       using: 'BTREE',
       fields: ['first_name', 'last_name', 'dob']
+    },
+    {
+      name: 'idx_hash',
+      unique: true,
+      using: 'BTREE',
+      fields: ['hash']
     }]
   })
   Person.associate = function (models) {

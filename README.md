@@ -33,6 +33,7 @@ npm test
 Start the server.
 ```sh
 docker-compose up
+docker exec sqlserver /opt/mssql-tools/bin/sqlcmd -U sa -P Password@123 -Q "create database temp"
 AUTH_TOKEN=abc PORT=8080 npm start
 ```
 Run the job.
@@ -61,9 +62,8 @@ node src/index.js test/fixtures/some_specific_file.pdf save
 ### Inspecting the DB
 As usual make sure the DB is running (`docker-compose up`).
 ```sh
-npm run psql
+npm run mssql
 ```
-If you do not have `psql` you can install it by running: `brew install postgresql`.
 
 ### DB changes
 1. Create a new migration file, the migration file's name must match the pattern and have the current date and time.
